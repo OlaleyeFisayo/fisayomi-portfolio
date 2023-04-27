@@ -21,6 +21,11 @@ export default function ProjectSection() {
               />
             );
           })}
+          <a 
+            href="https://codepen.io/OlaleyeFisayo" 
+            className="btn"
+            target="_blank"
+          >See More</a>
         </div>
       </div>
     </section>
