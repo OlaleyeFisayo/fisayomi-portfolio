@@ -23,6 +23,18 @@ const data = [
       "https://gleaming-sunflower-b8776e.netlify.app/",
     ],
   },
+  {
+    id: 3,
+    imgUrl: "./images/tenzies.png",
+    header: "Tenzies",
+    description:
+      "Tenzies, a fun and fast-paced dice game, completed as part of the challenge. Ready to roll the dice? Let's play!",
+    stacks: ["React", "CSS"],
+    links: [
+      "https://github.com/OlaleyeFisayo/tenizes",
+      "https://bejewelled-salamander-205972.netlify.app/",
+    ],
+  },
 ];
 
 export { data };
