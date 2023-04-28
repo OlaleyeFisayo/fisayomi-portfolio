@@ -8,6 +8,7 @@ import reactIcon from "../assets/svgs/icons8-react.svg";
 import reduxIcon from "../assets/svgs/icons8-redux.svg";
 import tailwindIcon from "../assets/svgs/icons8-tailwind-css.svg";
 import sassIcon from "../assets/svgs/icons8-sass.svg";
+import typeScriptIcon from "../assets/svgs/icons8-typescript.svg";
 import gitIcon from "../assets/svgs/icons8-git.svg";
 
 export default function HomeSection() {
@@ -65,9 +66,10 @@ export default function HomeSection() {
                 <li><img src={cssIcon} alt="CSS" /></li>
                 <li><img src={javascriptIcon} alt="JavaScript" /></li>
                 <li><img src={reactIcon} alt="React" /></li>
+                <li><img src={typeScriptIcon} alt="TypeScript" /></li>
                 <li><img src={reduxIcon} alt="Redux" /></li>
                 <li><img src={sassIcon} alt="SASS" /></li>
-                <li><img src={tailwindIcon} alt="tailwind CSS" /></li>
+                <li><img src={tailwindIcon} alt="Tailwind CSS" /></li>
                 <li><img src={gitIcon} alt="Git" /></li>
             </ul>
         </div>

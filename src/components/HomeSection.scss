@@ -180,7 +180,7 @@
           padding: 2px 3px
         }
         li:nth-of-type(5):hover::after {
-          content: "Redux";
+          content: "TypeScript";
           background: #ffffff;
           color: #040615;
           position: absolute;
@@ -189,7 +189,7 @@
           padding: 2px 3px
         }
         li:nth-of-type(6):hover::after {
-          content: "SASS/SCSS";
+          content: "Redux";
           background: #ffffff;
           color: #040615;
           position: absolute;
@@ -198,7 +198,7 @@
           padding: 2px 3px
         }
         li:nth-of-type(7):hover::after {
-          content: "Tailwind css";
+          content: "SASS/SCSS";
           background: #ffffff;
           color: #040615;
           position: absolute;
@@ -207,6 +207,15 @@
           padding: 2px 3px
         }
         li:nth-of-type(8):hover::after {
+          content: "Tailwind CSS";
+          background: #ffffff;
+          color: #040615;
+          position: absolute;
+          top: 0;
+          text-align: center;
+          padding: 2px 3px
+        }
+        li:nth-of-type(9):hover::after {
           content: "Git";
           background: #ffffff;
           color: #040615;
