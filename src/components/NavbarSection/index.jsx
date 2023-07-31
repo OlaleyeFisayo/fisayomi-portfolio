@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Navbar.scss";
+import "./index.scss";
 
 export default function Navbar() {
   const [toggle, setToggle] = useState(false);

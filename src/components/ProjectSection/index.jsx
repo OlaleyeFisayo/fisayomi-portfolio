@@ -1,6 +1,6 @@
-import { data } from "../data";
-import Project from "./Project";
-import "./ProjectSection.scss";
+import { data } from "../../data";
+import Project from "../Projects";
+import "./index.scss";
 
 export default function ProjectSection() {
   return (

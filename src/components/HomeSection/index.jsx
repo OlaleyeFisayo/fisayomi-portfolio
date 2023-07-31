@@ -1,15 +1,15 @@
-import "./HomeSection.scss";
-import handwave from "../assets/svgs/handwave.svg";
-import img from "../assets/images/pic.jpg";
-import htmlIcon from "../assets/svgs/icons8-html-5.svg";
-import cssIcon from "../assets/svgs/icons8-css3.svg";
-import javascriptIcon from "../assets/svgs/icons8-javascript.svg"
-import reactIcon from "../assets/svgs/icons8-react.svg";
-import reduxIcon from "../assets/svgs/icons8-redux.svg";
-import tailwindIcon from "../assets/svgs/icons8-tailwind-css.svg";
-import sassIcon from "../assets/svgs/icons8-sass.svg";
-import typeScriptIcon from "../assets/svgs/icons8-typescript.svg";
-import gitIcon from "../assets/svgs/icons8-git.svg";
+import "./index.scss";
+import handwave from "../../assets/svgs/handwave.svg";
+import img from "../../assets/images/pic.jpg";
+import htmlIcon from "../../assets/svgs/icons8-html-5.svg";
+import cssIcon from "../../assets/svgs/icons8-css3.svg";
+import javascriptIcon from "../../assets/svgs/icons8-javascript.svg"
+import reactIcon from "../../assets/svgs/icons8-react.svg";
+import reduxIcon from "../../assets/svgs/icons8-redux.svg";
+import tailwindIcon from "../../assets/svgs/icons8-tailwind-css.svg";
+import sassIcon from "../../assets/svgs/icons8-sass.svg";
+import typeScriptIcon from "../../assets/svgs/icons8-typescript.svg";
+import gitIcon from "../../assets/svgs/icons8-git.svg";
 
 export default function HomeSection() {
   return (

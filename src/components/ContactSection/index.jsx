@@ -1,5 +1,5 @@
-import "./ContactSection.scss";
-import email from "../assets/svgs/email.svg"
+import "./index.scss";
+import email from "../../assets/svgs/email.svg"
 
 export default function ContactSection() {
   return (

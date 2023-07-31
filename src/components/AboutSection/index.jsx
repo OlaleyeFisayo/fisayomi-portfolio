@@ -1,7 +1,7 @@
-import "./AboutSection.scss";
-import aboutImg from "../assets/images/about-img.webp";
-import workingEmoji from "../assets/images/working-emoji.c5325f52b5be329995a5.png";
-import text from "../assets/svgs/text.svg";
+import "./index.scss";
+import aboutImg from "../../assets/images/about-img.webp";
+import workingEmoji from "../../assets/images/working-emoji.c5325f52b5be329995a5.png";
+import text from "../../assets/svgs/text.svg";
 
 export default function AboutSection() {
   return (
