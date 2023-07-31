@@ -58,9 +58,10 @@
         img:nth-of-type(1) {
           width: 190px;
           height: 190px;
-          animation-name: rotate;
-          animation-duration: 3s;
-          animation-iteration-count: infinite;
+          // animation-name: rotate;
+          // animation-duration: 3s;
+          // animation-iteration-count: infinite;
+          animation: rotate 4s linear infinite;
         }
 
         img:nth-of-type(2) {
@@ -112,10 +113,10 @@
 }
 
 @keyframes rotate {
-  0% {
+  from {
     transform: rotate(0deg);
   }
-  100% {
-    transform: rotate(360deg);
+  to {
+    transform: rotate(-360deg);
   }
 }
