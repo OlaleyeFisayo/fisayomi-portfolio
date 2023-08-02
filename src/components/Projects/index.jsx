@@ -33,9 +33,11 @@ export default function Project({
               />
             </svg>
           </a>
-          <a href={links[1]} target="_blank">
-            Live Demo
-          </a>
+          {links[1] && (
+            <a href={links[1]} target="_blank">
+              Live Demo
+            </a>
+          )}
         </div>
       </div>
       <div className="project-img">

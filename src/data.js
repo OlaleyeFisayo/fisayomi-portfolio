@@ -1,6 +1,17 @@
 const data = [
   {
     id: 1,
+    imgUrl: "./images/img-to-css-art.png",
+    header: "Image to CSS art",
+    description:
+      'The web application transforms images into CSS art by first converting the image to SVG and then converting the SVG path into the "css clip-path: Polygon()" format.',
+    stacks: ["Node.js", "HTML", "Express", "SCSS"],
+    links: [
+      "https://github.com/OlaleyeFisayo/imgToCSSart",
+    ],
+  },
+  {
+    id: 2,
     imgUrl: "./images/interactive-card.png",
     header: "Interactive Card details",
     description:
@@ -12,7 +23,7 @@ const data = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     imgUrl: "./images/quizzical.png",
     header: "Quiz App 2.0",
     description:
@@ -24,7 +35,7 @@ const data = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     imgUrl: "./images/tenzies.png",
     header: "Tenzies",
     description:
