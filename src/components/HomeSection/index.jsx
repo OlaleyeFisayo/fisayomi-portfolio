@@ -19,7 +19,7 @@ export default function HomeSection() {
         <div className="home-main">
           <div className="home-text">
             <h1>
-              Front-End Web Developer <img src={handwave} alt="hand wave" />
+              Full stack Web Developer <img src={handwave} alt="hand wave" />
             </h1>
             <p>
               Hi, I'm Festus-Olaleye Fisayo, A passionate Front-end Developer
