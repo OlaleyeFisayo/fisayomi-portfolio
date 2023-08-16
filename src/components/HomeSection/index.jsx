@@ -3,12 +3,13 @@ import handwave from "../../assets/svgs/handwave.svg";
 import img from "../../assets/images/pic.jpg";
 import htmlIcon from "../../assets/svgs/icons8-html-5.svg";
 import cssIcon from "../../assets/svgs/icons8-css3.svg";
-import javascriptIcon from "../../assets/svgs/icons8-javascript.svg"
+import javascriptIcon from "../../assets/svgs/icons8-javascript.svg";
 import reactIcon from "../../assets/svgs/icons8-react.svg";
 import reduxIcon from "../../assets/svgs/icons8-redux.svg";
 import tailwindIcon from "../../assets/svgs/icons8-tailwind-css.svg";
 import sassIcon from "../../assets/svgs/icons8-sass.svg";
 import typeScriptIcon from "../../assets/svgs/icons8-typescript.svg";
+import nodeIcon from "../../assets/svgs/icons8-node-js.svg";
 import gitIcon from "../../assets/svgs/icons8-git.svg";
 
 export default function HomeSection() {
@@ -25,7 +26,10 @@ export default function HomeSection() {
               based in Lagos, Nigeria 📍
             </p>
             <span>
-              <a href="https://www.linkedin.com/in/fisayo-festus-olaleye-67a778227/" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/fisayo-festus-olaleye-67a778227/"
+                target="_blank"
+              >
                 <svg
                   width="27"
                   height="28"
@@ -60,18 +64,39 @@ export default function HomeSection() {
           </div>
         </div>
         <div className="skills">
-            <p>Tech Stack</p>
-            <ul>
-                <li><img src={htmlIcon} alt="HTML" /></li>
-                <li><img src={cssIcon} alt="CSS" /></li>
-                <li><img src={javascriptIcon} alt="JavaScript" /></li>
-                <li><img src={reactIcon} alt="React" /></li>
-                <li><img src={typeScriptIcon} alt="TypeScript" /></li>
-                <li><img src={reduxIcon} alt="Redux" /></li>
-                <li><img src={sassIcon} alt="SASS" /></li>
-                <li><img src={tailwindIcon} alt="Tailwind CSS" /></li>
-                <li><img src={gitIcon} alt="Git" /></li>
-            </ul>
+          <p>Tech Stack</p>
+          <ul>
+            <li>
+              <img src={htmlIcon} alt="HTML" />
+            </li>
+            <li>
+              <img src={cssIcon} alt="CSS" />
+            </li>
+            <li>
+              <img src={javascriptIcon} alt="JavaScript" />
+            </li>
+            <li>
+              <img src={reactIcon} alt="React" />
+            </li>
+            <li>
+              <img src={typeScriptIcon} alt="TypeScript" />
+            </li>
+            <li>
+              <img src={reduxIcon} alt="Redux" />
+            </li>
+            <li>
+              <img src={sassIcon} alt="SASS" />
+            </li>
+            <li>
+              <img src={tailwindIcon} alt="Tailwind CSS" />
+            </li>
+            <li>
+              <img src={gitIcon} alt="Git" />
+            </li>
+            <li>
+              <img src={nodeIcon} alt="Node" />
+            </li>
+          </ul>
         </div>
       </div>
     </section>

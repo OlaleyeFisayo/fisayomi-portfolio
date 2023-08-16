@@ -216,6 +216,15 @@
           text-align: center;
           padding: 2px 3px;
         }
+        li:nth-of-type(10):hover::after {
+          content: "Node.js";
+          background: #ffffff;
+          color: #040615;
+          position: absolute;
+          top: 0;
+          text-align: center;
+          padding: 2px 3px;
+        }
       }
     }
   }
