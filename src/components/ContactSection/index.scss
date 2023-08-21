@@ -2,50 +2,48 @@
   background: #ffffff;
   padding: 110px 30px;
 
-  
-
   .contact-content {
     width: 100%;
     max-width: 990px;
     margin: 0 auto;
 
-    @media (max-width:900px) {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
+    @media (max-width: 900px) {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
 
-        .contact-title {
-            h1 {
-                text-align: center;
-            }
-
-            h2 {
-                text-align: center;
-            }
+      .contact-title {
+        h1 {
+          text-align: center;
         }
 
-        .contact-area {
-            .contact-box {
-                display: flex;
-                flex-direction: column !important;
-                justify-content: center;
-                align-items: center;
-
-                .contact-info {
-                    h1 {
-                        text-align: center;
-                    }
-
-                    p {
-                        a {
-                            text-align: center;
-                        }
-                    }
-                }
-            }
+        h2 {
+          text-align: center;
         }
       }
+
+      .contact-area {
+        .contact-box {
+          display: flex;
+          flex-direction: column !important;
+          justify-content: center;
+          align-items: center;
+
+          .contact-info {
+            h1 {
+              text-align: center;
+            }
+
+            p {
+              a {
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
 
     .contact-title {
       margin-bottom: 60px;
