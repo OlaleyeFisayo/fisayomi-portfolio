@@ -22,7 +22,7 @@ export default function HomeSection() {
               Full stack Web Developer <img src={handwave} alt="hand wave" />
             </h1>
             <p>
-              Hi, I'm Festus-Olaleye Fisayo, A passionate Front-end Developer
+              Hi, I'm Festus-Olaleye Fisayo, A passionate Full-Stack Developer
               based in Lagos, Nigeria 📍
             </p>
             <span>
