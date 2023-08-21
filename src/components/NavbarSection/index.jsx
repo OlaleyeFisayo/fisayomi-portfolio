@@ -42,9 +42,9 @@ export default function Navbar() {
       </div>
 
       <div className={`mobile-view ${toggle ? "show" : ""}`}>
-        <div class="x" onClick={hideNavBar}>
-          <div class="line line1"></div>
-          <div class="line line2"></div>
+        <div className="x" onClick={hideNavBar}>
+          <div className="line line1"></div>
+          <div className="line line2"></div>
         </div>
 
         <ul>
