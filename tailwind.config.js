@@ -14,12 +14,17 @@ export default {
         charcoal: "#464646",
       },
       animation: {
-        "infinite-scroll": "infinite-scroll 25s linear infinite",
+        "infinite-scroll-right": "infinite-scroll-right 25s linear infinite",
+        "infinite-scroll-left": "infinite-scroll-left 25s linear infinite",
       },
       keyframes: {
-        "infinite-scroll": {
+        "infinite-scroll-right": {
           from: { transform: "translateX(0)" },
           to: { transform: "translateX(-100%)" },
+        },
+        "infinite-scroll-left": {
+          from: { transform: "translateX(-100%)" },
+          to: { transform: "translateX(0)" },
         },
       },
     },
