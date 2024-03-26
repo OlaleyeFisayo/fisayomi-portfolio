@@ -11,4 +11,10 @@
   .debug {
     border: 1px solid red;
   }
+  .shutter {
+    background-image: url("./assets/shutter.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
