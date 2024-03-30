@@ -7,7 +7,7 @@ export default function Loader() {
   return (
     <section
       id="loader"
-      className="h-screen w-screen bg-black text-offWhite absolute z-30 shutter"
+      className="h-screen w-screen bg-black text-offWhite absolute z-30 shutter overflow-hidden"
     >
       <div className="fixed h-screen w-[550vw] md:w-[200vw] flex-nowrap flex-col rotate-[315deg] top-[-100%] left-[-250%] z-30 md:top-[-25%] md:left-[-80%]">
         {scrollerArray.map((items, index) => {
@@ -24,14 +24,13 @@ export default function Loader() {
         })}
       </div>
 
-      <div className=" w-screen h-screen flex justify-center items-center px-1 py-1">
+      <div className=" w-screen h-screen flex justify-center items-center px-1 py-1 flex-col">
         <h1 className="text-center text-4xl z-40" id="title-1">
-          OlaleyeFisayo <span className="font-extrabold">@{currentYear}</span>{" "}
-          <br />
-          <p className="text-center text-4xl z-40" id="title-2">
-            Demofolio
-          </p>
+          OlaleyeFisayo
         </h1>
+        <p className="text-center text-4xl z-40 block" id="title-2">
+          <span className="font-extrabold">@{currentYear}</span> Demofolio
+        </p>
       </div>
     </section>
   );
