@@ -1,9 +1,12 @@
 import { useLayoutEffect, useRef } from "react";
 import Loader from "../components/Loader";
 import gsap from "gsap";
+import WelcomeSection from "../components/WelcomeSection";
 
 export default function Home() {
   const sections = useRef(null);
+  const currentYear = new Date().getFullYear();
+  const currentMonth = new Date().getMonth();
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -33,7 +36,8 @@ export default function Home() {
 
   return (
     <div className="font-Montserrat relative" ref={sections}>
-      <Loader />
+      <Loader currentYear={currentYear} />
+      <WelcomeSection currentMonth={currentMonth} currentYear={currentYear} />
     </div>
   );
 }

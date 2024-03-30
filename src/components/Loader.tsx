@@ -1,8 +1,8 @@
+import { loaderProps } from "../types";
 import InfiniteScroller from "./InfiniteScroller";
 
-export default function Loader() {
+export default function Loader({ currentYear }: loaderProps) {
   const scrollerArray = new Array(16).fill(" ");
-  const currentYear = new Date().getFullYear();
 
   return (
     <section

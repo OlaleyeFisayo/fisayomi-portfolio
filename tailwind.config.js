@@ -8,6 +8,7 @@ export default {
       },
       backgroundColor: {
         loader: "rgba(0, 0, 0, 0.92)",
+        beige: "#ECE4D6",
       },
       textColor: {
         offWhite: "#FAF9F6",
