@@ -13,8 +13,12 @@ export default function Loader() {
         {scrollerArray.map((items, index) => {
           return (
             <InfiniteScroller
-              key={index}
-              direction={`${index % 2 === 0 ? "right" : "left"}`}
+              key={index + items}
+              direction={`${
+                index % 2 === 0
+                  ? "animate-infinite-scroll-right"
+                  : "animate-infinite-scroll-left"
+              }`}
             />
           );
         })}
