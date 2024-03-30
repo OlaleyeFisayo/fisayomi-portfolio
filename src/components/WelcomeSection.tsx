@@ -87,15 +87,6 @@ export default function WelcomeSection({
             HEY, I'M FISAYO.
           </h1>
         </div>
-        <p className="absolute right-[-10px] h-[20px] bottom-16 lowercase select-none flex items-center justify-center gap-2 rotate-90">
-          Scroll
-          <div className="w-[26px] h-[20px] grid place-items-center overflow-hidden">
-            <InfiniteScroller
-              text="-"
-              direction="animate-infinite-scroll-left"
-            />
-          </div>
-        </p>
       </section>
     </div>
   );
