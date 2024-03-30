@@ -38,7 +38,7 @@ export default function WelcomeSection({
   };
 
   return (
-    <div className="shutter w-full bg-beige px-3 relative">
+    <div className="shutter w-full bg-beige px-4 relative">
       <nav className="flex justify-between items-center py-3 gap-2">
         <Link
           to="/"
@@ -87,7 +87,7 @@ export default function WelcomeSection({
             HEY, I'M FISAYO.
           </h1>
         </div>
-        <p className="absolute right-0 h-[20px] bottom-16 lowercase select-none flex items-center justify-center gap-2 rotate-90">
+        <p className="absolute right-[-10px] h-[20px] bottom-16 lowercase select-none flex items-center justify-center gap-2 rotate-90">
           Scroll
           <div className="w-[26px] h-[20px] grid place-items-center overflow-hidden">
             <InfiniteScroller
