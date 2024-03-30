@@ -7,9 +7,12 @@ export default function Loader({ currentYear }: loaderProps) {
   return (
     <section
       id="loader"
-      className="h-screen w-screen bg-black text-offWhite absolute z-30 shutter overflow-hidden"
+      className="h-screen w-screen bg-black text-offWhite fixed z-30 shutter overflow-hidden"
     >
-      <div className="fixed h-screen w-[550vw] md:w-[200vw] flex-nowrap flex-col rotate-[315deg] top-[-100%] left-[-250%] z-30 md:top-[-25%] md:left-[-80%]">
+      <div
+        id="infinite"
+        className="fixed h-screen w-[550vw] md:w-[200vw] flex-nowrap flex-col rotate-[315deg] top-[-100%] left-[-250%] z-30 md:top-[-25%] md:left-[-80%]"
+      >
         {scrollerArray.map((items, index) => {
           return (
             <InfiniteScroller

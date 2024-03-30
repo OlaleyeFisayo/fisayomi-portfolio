@@ -14,20 +14,31 @@ export default function Home() {
       t1.from(["#title-1"], {
         opacity: 0,
         y: "-=30",
-        duration: 1.5,
+        duration: 1,
       })
         .from(["#title-2"], {
           opacity: 0,
-          duration: 1.5,
+          duration: 0.8,
           y: "-=30",
           stagger: 0.5,
         })
+        .to("#infinite", {
+          opacity: 0,
+        })
         .to("#loader", {
-          stagger: 0.5,
-          ease: "power1.inOut",
+          stagger: 0.6,
+          ease: "none",
           yPercent: -100,
           duration: 1.5,
           borderRadius: "50%",
+        })
+        .from("#ellipse", {
+          opacity: 0,
+        })
+        .from(["#name-title-1", "#name-title-2", "#name-title-3"], {
+          opacity: 0,
+          y: "-=30",
+          stagger: 0.5,
         });
     }, sections);
 
@@ -35,7 +46,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="font-Montserrat relative" ref={sections}>
+    <div className="font-Grotesk relative " ref={sections}>
       <Loader currentYear={currentYear} />
       <WelcomeSection currentMonth={currentMonth} currentYear={currentYear} />
     </div>

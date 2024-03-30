@@ -4,15 +4,19 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        Montserrat: ["Montserrat", "sans-serif"],
+        Grotesk: ["Grotesk", "sans-serif"],
       },
       backgroundColor: {
-        loader: "rgba(0, 0, 0, 0.92)",
+        loader: "#464646",
         beige: "#ECE4D6",
+        ball: "rgba(0, 0, 0, 0.79)",
       },
       textColor: {
         offWhite: "#FAF9F6",
         charcoal: "#464646",
+        taupe: "#8B8589",
+        secondary: "rgb(162, 158, 154)",
+        warmGray: "#AFAFAF",
       },
       animation: {
         "infinite-scroll-right": "infinite-scroll-right 25s linear infinite",
