@@ -4,7 +4,6 @@ import logo from "../assets/logo.png";
 import { formatMonth } from "../functions";
 import { welcomeSectionProps } from "../types";
 import gsap from "gsap";
-import InfiniteScroller from "./InfiniteScroller";
 
 export default function WelcomeSection({
   currentYear,
