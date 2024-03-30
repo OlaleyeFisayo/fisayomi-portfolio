@@ -46,7 +46,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="font-Grotesk relative " ref={sections}>
+    <div className="font-Grotesk relative transition-all" ref={sections}>
       <Loader currentYear={currentYear} />
       <WelcomeSection currentMonth={currentMonth} currentYear={currentYear} />
     </div>

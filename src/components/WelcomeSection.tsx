@@ -64,7 +64,7 @@ export default function WelcomeSection({
       <section className="w-full reducedHeight relative flex justify-center items-center py-8">
         <div
           id="ellipse"
-          className="absolute lg:w-[600px] lg:h-[600px] md:w-[450px] md:h-[450px] sm:max-w-[400px] sm:max-h-[400px] max-w-[250px] max-h-[250px] w-full h-full bg-ball rounded-full"
+          className="absolute lg:w-[700px] lg:h-[700px] md:w-[500px] md:h-[500px] sm:max-w-[400px] sm:max-h-[400px] max-w-[250px] max-h-[250px] w-full h-full bg-ball rounded-full"
         ></div>
         <div className="relative flex flex-col gap-9">
           <h1
