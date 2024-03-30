@@ -4,6 +4,7 @@ import logo from "../assets/logo.png";
 import { formatMonth } from "../functions";
 import { welcomeSectionProps } from "../types";
 import gsap from "gsap";
+import InfiniteScroller from "./InfiniteScroller";
 
 export default function WelcomeSection({
   currentYear,
@@ -86,9 +87,14 @@ export default function WelcomeSection({
             HEY, I'M FISAYO.
           </h1>
         </div>
-        <p className="absolute right-[-30px] bottom-16 lowercase select-none flex items-center gap-1 rotate-90">
+        <p className="absolute right-0 h-[20px] bottom-16 lowercase select-none flex items-center justify-center gap-2 rotate-90">
           Scroll
-          <span className="inline-block w-[26px] h-[2px] bg-black animate-pulse"></span>
+          <div className="w-[26px] h-[20px] grid place-items-center overflow-hidden">
+            <InfiniteScroller
+              text="-"
+              direction="animate-infinite-scroll-left"
+            />
+          </div>
         </p>
       </section>
     </div>

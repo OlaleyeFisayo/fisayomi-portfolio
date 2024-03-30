@@ -7,4 +7,9 @@ type welcomeSectionProps = {
   currentMonth: number;
 };
 
-export type { loaderProps, welcomeSectionProps };
+type infiniteScrollerProps = {
+  direction: string;
+  text: string;
+};
+
+export type { loaderProps, welcomeSectionProps, infiniteScrollerProps };

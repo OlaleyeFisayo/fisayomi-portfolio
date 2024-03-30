@@ -22,6 +22,7 @@ export default function Loader({ currentYear }: loaderProps) {
                   ? "animate-infinite-scroll-right"
                   : "animate-infinite-scroll-left"
               }`}
+              text="SOFTWARE ENGINEER"
             />
           );
         })}
