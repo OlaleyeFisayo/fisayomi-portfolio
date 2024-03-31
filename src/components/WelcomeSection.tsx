@@ -64,24 +64,24 @@ export default function WelcomeSection({
       <section className="w-full reducedHeight relative flex justify-center items-center py-8">
         <div
           id="ellipse"
-          className="absolute lg:w-[700px] lg:h-[700px] md:w-[500px] md:h-[500px] sm:max-w-[400px] sm:max-h-[400px] max-w-[250px] max-h-[250px] w-full h-full bg-ball rounded-full"
+          className="absolute bg-ball ellipse"
         ></div>
         <div className="relative flex flex-col gap-9">
           <h1
             id="name-title-1"
-            className="font-extrabold text-secondary lg:text-9xl md:text-7xl sm:text-6xl text-4xl text-center block select-none w-full"
+            className="font-extrabold text-secondary lg:text-8xl md:text-7xl sm:text-6xl text-4xl text-center block select-none w-full"
           >
             HEY, I'M FISAYO.
           </h1>
           <h1
             id="name-title-2"
-            className="font-extrabold lg:text-9xl md:text-7xl sm:text-6xl text-4xl text-center block select-none textStroke"
+            className="font-extrabold lg:text-8xl md:text-7xl sm:text-6xl text-4xl text-center block select-none textStroke"
           >
             HEY, I'M FISAYO.
           </h1>
           <h1
             id="name-title-3"
-            className="font-extrabold text-secondary lg:text-9xl md:text-7xl sm:text-6xl text-4xl text-center block select-none"
+            className="font-extrabold text-secondary lg:text-8xl md:text-7xl sm:text-6xl text-4xl text-center block select-none"
           >
             HEY, I'M FISAYO.
           </h1>
