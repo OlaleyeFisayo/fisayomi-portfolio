@@ -1,8 +1,8 @@
 import { useRef } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.png";
-import { formatMonth } from "../functions";
-import { welcomeSectionProps } from "../types";
+import logo from "../../assets/logo.png";
+import { formatMonth } from "../../functions";
+import { welcomeSectionProps } from "../../types";
 import gsap from "gsap";
 
 export default function WelcomeSection({

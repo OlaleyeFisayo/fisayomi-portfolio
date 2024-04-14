@@ -1,7 +1,7 @@
 import { useLayoutEffect, useRef } from "react";
 import Loader from "../components/Loader";
 import gsap from "gsap";
-import WelcomeSection from "../components/WelcomeSection";
+import WelcomeSection from "../components/secitons/WelcomeSection";
 
 export default function Home() {
   const sections = useRef(null);
