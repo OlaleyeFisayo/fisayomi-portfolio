@@ -1,8 +1,10 @@
 import { useLayoutEffect, useRef } from "react";
 import Loader from "../components/Loader";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Welcome from "../components/secitons/Welcome";
 import About from "../components/secitons/About";
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
   const sections = useRef(null);
@@ -12,6 +14,13 @@ export default function Home() {
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       const t1 = gsap.timeline();
+      const t2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#about",
+          start: "top 15%",
+          toggleActions: "restart none none reverse",
+        },
+      });
       t1.from(["#title-1"], {
         opacity: 0,
         y: "-=30",
@@ -19,18 +28,14 @@ export default function Home() {
       })
         .from(["#title-2"], {
           opacity: 0,
-          duration: 0.8,
+          duration: 1,
           y: "-=30",
-          stagger: 0.5,
-        })
-        .to("#infinite", {
-          opacity: 0,
         })
         .to("#loader", {
-          stagger: 0.6,
-          ease: "none",
+          stagger: 1,
+          ease: "power1.out",
           yPercent: -100,
-          duration: 1.5,
+          duration: 1,
           borderRadius: "50%",
         })
         .from("#ellipse", {
@@ -41,6 +46,11 @@ export default function Home() {
           y: "-=30",
           stagger: 0.5,
         });
+
+      t2.to(["#welcome", "#about"], {
+        backgroundColor: "black",
+        duration: 0.5,
+      });
     }, sections);
 
     return () => ctx.revert();

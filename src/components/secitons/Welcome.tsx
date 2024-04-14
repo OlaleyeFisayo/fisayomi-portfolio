@@ -37,7 +37,7 @@ export default function Welcome({
   };
 
   return (
-    <div className="shutter w-full bg-slate-50 px-4 relative">
+    <div id="welcome" className="shutter w-full bg-slate-50 px-4 relative">
       <nav className="flex justify-between items-center py-3 gap-2">
         <Link
           to="/"
@@ -62,10 +62,7 @@ export default function Welcome({
         </div>
       </nav>
       <section className="w-full reducedHeight relative flex justify-center items-center py-8">
-        <div
-          id="ellipse"
-          className="absolute bg-stone-800  shutter ellipse"
-        ></div>
+        <div id="ellipse" className="absolute bg-neutral-800 ellipse"></div>
         <div className="relative flex flex-col gap-9">
           <h1
             id="name-title-1"

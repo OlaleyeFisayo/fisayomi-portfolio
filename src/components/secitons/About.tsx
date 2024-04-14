@@ -1,10 +1,12 @@
 export default function About() {
   return (
-    <section className="w-full min-h-[100dvh] bg-slate-50 shutter grid place-items-center">
-      <h1 className="text-neutral-400 font-bold text-8xl px-5">
-        I create elevating digital experiences that inspire and connect with
-        people through development.
-      </h1>
+    <section id="about" className="w-full min-h-[100dvh] bg-slate-50 shutter grid place-items-center">
+      <div className="w-full px-4">
+        <h1 className="text-neutral-300 font-bold text-8xl px-5">
+          I create elevating digital experiences that inspire and connect with
+          people through development.
+        </h1>
+      </div>
     </section>
   );
 }
