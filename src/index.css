@@ -18,9 +18,6 @@
     background-size: cover;
     background-blend-mode: difference;
   }
-  .reducedHeight {
-    height: calc(100dvh - 99px);
-  }
   .ellipse {
     width: 100%;
     max-width: 650px;

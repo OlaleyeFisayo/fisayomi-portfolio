@@ -17,19 +17,23 @@ export default function Home() {
       const t2 = gsap.timeline({
         scrollTrigger: {
           trigger: "#about",
-          start: "top 15%",
+          start: "top 30%",
           toggleActions: "restart none none reverse",
         },
       });
-      t1.from(["#title-1"], {
+      t1.from("#title-1", {
         opacity: 0,
         y: "-=30",
         duration: 1,
       })
-        .from(["#title-2"], {
+        .from("#title-2", {
           opacity: 0,
-          duration: 1,
+          duration: 0.7,
           y: "-=30",
+          stagger: 1,
+        })
+        .to("#title-2", {
+          duration: 0.7,
         })
         .to("#loader", {
           stagger: 1,
@@ -39,7 +43,8 @@ export default function Home() {
           borderRadius: "50%",
         })
         .from("#ellipse", {
-          opacity: 0,
+          width: 0,
+          height: 0,
         })
         .from(["#name-title-1", "#name-title-2", "#name-title-3"], {
           opacity: 0,

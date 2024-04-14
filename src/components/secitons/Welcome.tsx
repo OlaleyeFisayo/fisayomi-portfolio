@@ -61,7 +61,7 @@ export default function Welcome({
           </h1>
         </div>
       </nav>
-      <section className="w-full reducedHeight relative flex justify-center items-center py-8">
+      <section className="w-full min-h-[100dvh] relative flex justify-center items-center py-8">
         <div id="ellipse" className="absolute bg-neutral-800 ellipse"></div>
         <div className="relative flex flex-col gap-9">
           <h1
