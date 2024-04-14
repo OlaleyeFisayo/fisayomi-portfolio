@@ -5,7 +5,7 @@ import { formatMonth } from "../../functions";
 import { welcomeSectionProps } from "../../types";
 import gsap from "gsap";
 
-export default function WelcomeSection({
+export default function Welcome({
   currentYear,
   currentMonth,
 }: welcomeSectionProps) {

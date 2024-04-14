@@ -1,7 +1,8 @@
 import { useLayoutEffect, useRef } from "react";
 import Loader from "../components/Loader";
 import gsap from "gsap";
-import WelcomeSection from "../components/secitons/WelcomeSection";
+import Welcome from "../components/secitons/Welcome";
+import About from "../components/secitons/About";
 
 export default function Home() {
   const sections = useRef(null);
@@ -48,7 +49,8 @@ export default function Home() {
   return (
     <div className="font-Grotesk relative transition-all" ref={sections}>
       <Loader currentYear={currentYear} />
-      <WelcomeSection currentMonth={currentMonth} currentYear={currentYear} />
+      <Welcome currentMonth={currentMonth} currentYear={currentYear} />
+      <About />
     </div>
   );
 }
