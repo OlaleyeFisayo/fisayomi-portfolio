@@ -7,7 +7,7 @@ export default function Loader({ currentYear }: loaderProps) {
   return (
     <section
       id="loader"
-      className="h-screen w-screen bg-black text-offWhite fixed z-30 shutter overflow-hidden"
+      className="h-screen w-screen bg-black text-neutral-400 fixed z-30 shutter overflow-hidden"
     >
       <div
         id="infinite"

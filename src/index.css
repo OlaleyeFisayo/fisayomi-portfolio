@@ -30,7 +30,7 @@
   }
   .textStroke {
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 3px black;
+    -webkit-text-stroke: 3px;
   }
   @media (max-width: 1024px) {
     .ellipse {
