@@ -3,7 +3,7 @@ import React, { useLayoutEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-export function useGsapAnimation(sectionRef: React.MutableRefObject<null>) {
+export function useGsap(sectionRef: React.MutableRefObject<null>) {
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       const t1 = gsap.timeline();
@@ -55,5 +55,5 @@ export function useGsapAnimation(sectionRef: React.MutableRefObject<null>) {
     }, sectionRef);
 
     return () => ctx.revert();
-  }, []);
+  });
 }
