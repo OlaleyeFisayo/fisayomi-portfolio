@@ -52,12 +52,13 @@ export default function Home() {
           stagger: 0.5,
         });
 
-      t2.to(["#welcome", "#about"], {
+      t2.to(["#home", "#about"], {
         backgroundColor: "black",
         duration: 0.5,
-      }).to(["#ellipse", "#name-container"], {
+      })
+      .to(["#ellipse", "#name-container"], {
         opacity: 0,
-        // duration: 0.5,
+        duration: 0.3,
       });
     }, sections);
 
