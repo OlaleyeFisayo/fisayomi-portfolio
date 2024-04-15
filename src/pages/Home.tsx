@@ -55,6 +55,9 @@ export default function Home() {
       t2.to(["#welcome", "#about"], {
         backgroundColor: "black",
         duration: 0.5,
+      }).to(["#ellipse", "#name-container"], {
+        opacity: 0,
+        // duration: 0.5,
       });
     }, sections);
 

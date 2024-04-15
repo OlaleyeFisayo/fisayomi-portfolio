@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "Grotesk";
   src: url("./assets/font/SpaceGrotesk-VariableFont_wght.ttf");
