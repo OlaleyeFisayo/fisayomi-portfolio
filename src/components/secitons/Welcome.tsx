@@ -37,7 +37,7 @@ export default function Welcome({
   };
 
   return (
-    <div id="welcome" className="relative shutter w-full bg-slate-50 px-4 relative">
+    <div id="welcome" className="relative shutter w-full bg-slate-50 px-4">
       <nav className="flex justify-between items-center py-2 gap-2">
         <Link
           to="/"
