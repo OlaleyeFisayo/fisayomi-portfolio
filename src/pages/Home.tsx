@@ -3,6 +3,7 @@ import Loader from "../components/Loader";
 import Welcome from "../components/secitons/Welcome";
 import About from "../components/secitons/About";
 import { useGsap } from "../hook/useGsap";
+import Navbar from "../components/Navbar";
 
 export default function Home() {
   const sections = useRef(null);
@@ -13,6 +14,7 @@ export default function Home() {
 
   return (
     <div className="font-Grotesk relative transition-all" ref={sections}>
+      <Navbar />
       <Loader currentYear={currentYear} />
       <Welcome currentMonth={currentMonth} currentYear={currentYear} />
       <About />

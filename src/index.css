@@ -11,6 +11,14 @@
   src: url("./assets/font/SpaceGrotesk-VariableFont_wght.ttf");
 }
 
+::-webkit-scrollbar {
+  scrollbar-width: thin;
+}
+
+.home-height {
+  height: calc(100dvh - 86px);
+}
+
 @layer components {
   .debug {
     border: 1px solid red;

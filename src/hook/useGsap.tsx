@@ -27,6 +27,7 @@ export function useGsap(sectionRef: React.MutableRefObject<null>) {
           yPercent: -100,
           duration: 1,
           borderRadius: "50%",
+          display: "none",
         })
         .from("#ellipse", {
           width: 0,
@@ -41,17 +42,23 @@ export function useGsap(sectionRef: React.MutableRefObject<null>) {
       const t2 = gsap.timeline({
         scrollTrigger: {
           trigger: "#about",
-          start: "top 30%",
+          start: "top 20%",
           toggleActions: "restart none none reverse",
         },
       });
       t2.to(["#home", "#about"], {
         backgroundColor: "black",
-        duration: 0.5,
-      }).to(["#ellipse", "#name-container"], {
-        opacity: 0,
-        duration: 0.3,
-      });
+        stagger: 0
+      })
+        .to("#hamburger", {
+          opacity: 1,
+          backgroundColor: "rgba(248 250 252, 0.85)",
+          stagger: 0
+        })
+        .to(["#ellipse", "#name-container"], {
+          opacity: 0,
+          stagger: 0
+        });
     }, sectionRef);
 
     return () => ctx.revert();
