@@ -39,6 +39,7 @@ export function useGsap(sectionRef: React.MutableRefObject<null>) {
           stagger: 0.5,
         });
 
+      // about section navbar
       const t2 = gsap.timeline({
         scrollTrigger: {
           trigger: "#about",
@@ -48,16 +49,14 @@ export function useGsap(sectionRef: React.MutableRefObject<null>) {
       });
       t2.to(["#home", "#about"], {
         backgroundColor: "black",
-        stagger: 0
+        ease: "back.in",
       })
         .to("#hamburger", {
           opacity: 1,
           backgroundColor: "rgba(248 250 252, 0.85)",
-          stagger: 0
         })
         .to(["#ellipse", "#name-container"], {
           opacity: 0,
-          stagger: 0
         });
     }, sectionRef);
 

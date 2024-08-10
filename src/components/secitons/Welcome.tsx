@@ -40,9 +40,12 @@ export default function Welcome({
   return (
     <div
       id="home"
-      className="relative shutter w-full bg-slate-50 px-4 h-[100dvh]"
+      className="relative shutter bg-slate-50 w-full  px-4 h-[100dvh]"
     >
-      <nav className="flex justify-between items-center py-2 gap-2" id="welcome-nav">
+      <nav
+        className="flex justify-between items-center py-2 gap-2"
+        id="welcome-nav"
+      >
         <Link
           to="/"
           className="max-w-[70px] h-full relative"

@@ -12,11 +12,18 @@
 }
 
 ::-webkit-scrollbar {
-  scrollbar-width: thin;
+    display: none;
 }
 
 .home-height {
   height: calc(100dvh - 86px);
+}
+
+.showNav {
+    transform: translateX(0);
+}
+.hideNav {
+    transform: translateX(100%);
 }
 
 @layer components {
