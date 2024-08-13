@@ -1,4 +1,5 @@
-import { useState } from "react";
+import gsap from "gsap";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
@@ -39,7 +40,7 @@ export default function Navbar() {
               <a
                 href="#home"
                 onClick={toggleMenu}
-                className="text-6xl font-extrabold nav-slide uppercase tracking-wider"
+                className={`${showMenu ? "translate-y-[0] opacity-100" : "translate-y-[-100%] opacity-0"} transition-all duration-1000 text-6xl font-extrabold nav-slide uppercase tracking-wider`}
               >
                 Home
               </a>
@@ -48,7 +49,7 @@ export default function Navbar() {
               <a
                 href="#services"
                 onClick={toggleMenu}
-                className="text-6xl font-extrabold nav-slide uppercase tracking-wider"
+                className={`${showMenu ? "translate-y-[0] opacity-100" : "translate-y-[-100%] opacity-0"} transition-all duration-1000 text-6xl font-extrabold nav-slide uppercase tracking-wider`}
               >
                 services
               </a>
@@ -57,7 +58,7 @@ export default function Navbar() {
               <a
                 href="#work"
                 onClick={toggleMenu}
-                className="text-6xl font-extrabold nav-slide uppercase tracking-wider"
+                className={`${showMenu ? "translate-y-[0] opacity-100" : "translate-y-[-100%] opacity-0"} transition-all duration-1000 text-6xl font-extrabold nav-slide uppercase tracking-wider`}
               >
                 work
               </a>
@@ -66,7 +67,7 @@ export default function Navbar() {
               <a
                 href="#about"
                 onClick={toggleMenu}
-                className="text-6xl font-extrabold nav-slide uppercase tracking-wider"
+                className={`${showMenu ? "translate-y-[0] opacity-100" : "translate-y-[-100%] opacity-0"} transition-all duration-1000 text-6xl font-extrabold nav-slide uppercase tracking-wider`}
               >
                 about
               </a>
@@ -75,7 +76,7 @@ export default function Navbar() {
               <Link
                 to="/contact"
                 onClick={toggleMenu}
-                className="text-6xl font-extrabold nav-slide uppercase tracking-wider"
+                className={`${showMenu ? "translate-y-[0] opacity-100" : "translate-y-[-100%] opacity-0"} transition-all duration-1000 text-6xl font-extrabold nav-slide uppercase tracking-wider`}
               >
                 contact
               </Link>

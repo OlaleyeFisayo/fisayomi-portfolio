@@ -18,7 +18,7 @@ export default function Welcome({
       const offsetY = e.clientY - rect.top;
 
       gsap.to(containerRef.current, {
-        duration: 0.5,
+        duration: 0.3,
         x: offsetX - rect.width / 2,
         y: offsetY - rect.height / 2,
         ease: "power1.inOut",
@@ -29,7 +29,7 @@ export default function Welcome({
 
   const mouseOut = () => {
     gsap.to(containerRef.current, {
-      duration: 0.5,
+      duration: 0.3,
       x: 0,
       y: 0,
       ease: "power1.inOut",
