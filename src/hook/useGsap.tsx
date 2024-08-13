@@ -57,7 +57,7 @@ export function useGsap(sectionRef: React.MutableRefObject<null>) {
           duration: 0.2,
           opacity: 1,
           display: "flex",
-          backgroundColor: "rgba(248, 250, 252)",
+          //   backgroundColor: "rgba(248, 250, 252)",
         })
         .to(["#ellipse", "#name-container"], {
           opacity: 0,

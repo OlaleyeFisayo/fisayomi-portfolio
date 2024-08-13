@@ -37,16 +37,15 @@ export default function Welcome({
   };
   const nameArray = new Array(3).fill("HEY, I'M FISAYO.");
   const anchorNavs = ["services", "work", "about"];
-
   const linkNavs = ["contact"];
 
   return (
     <div
       id="home"
-      className="relative shutter bg-slate-50 w-full  px-4 h-[100dvh]"
+      className="relative shutter bg-neutral-300 w-full px-9 h-[100dvh]"
     >
       <nav
-        className="flex justify-between items-center py-2 gap-2"
+        className="flex justify-between items-center py-4 gap-2"
         id="welcome-nav"
       >
         <Link
@@ -65,18 +64,23 @@ export default function Welcome({
             />
           </div>
         </Link>
+        <div>
+          <h1 className="select-none font-normal text-neutral-500 text-xl uppercase">
+            web developer
+          </h1>
+        </div>
         {/* <div>
           <h1 className="select-none font-extrabold text-neutral-400">
             Available for work {formatMonth(currentMonth)} '
             {currentYear.slice(2, 4)}
           </h1>
         </div> */}
-        <div className="flex gap-2 z-30">
+        <div className="flex gap-4">
           {anchorNavs.map((nav) => (
             <span key={nav}>
               <a
                 href={`#${nav}`}
-                className="font-extrabold nav-slide uppercase text-neutral-400"
+                className="nav-slide uppercase text-neutral-500"
               >
                 {nav},
               </a>
@@ -86,7 +90,7 @@ export default function Welcome({
             <span key={nav}>
               <Link
                 to={`/${nav}`}
-                className="font-extrabold nav-slide uppercase text-neutral-400"
+                className="nav-slide uppercase text-neutral-500"
               >
                 {nav}
               </Link>
@@ -102,7 +106,7 @@ export default function Welcome({
               <h1
                 id={`name-title-${index + 1}`}
                 className={`font-extrabold ${
-                  index % 2 === 0 ? "text-neutral-400" : "text-black textStroke"
+                  index % 2 === 0 ? "text-neutral-500" : "text-black textStroke"
                 } lg:text-8xl md:text-7xl sm:text-6xl text-4xl text-center block select-none w-full`}
                 key={index}
               >
