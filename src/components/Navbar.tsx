@@ -21,7 +21,7 @@ export default function Navbar() {
   return (
     <div className="relative">
       <div
-        className={`flex flex-col gap-2 fixed top-8 z-10 right-4 px-3 py-7 h-auto cursor-pointer rounded-full bg-slate-50 shutter opacity-0 hover:scale-90 transition-all `}
+        className={`hidden flex-col gap-2 fixed top-8 right-4 px-3 py-7 h-auto cursor-pointer rounded-full bg-slate-50 shutter opacity-0 hover:scale-90 transition-all z-20`}
         onClick={toggleMenu}
         id="hamburger"
       >
@@ -34,7 +34,7 @@ export default function Navbar() {
       </div>
       <nav
         id="navbar"
-        className={`${showMenu ? "translate-x-0" : "translate-x-[100%]"} fixed top-0 left-0 w-full h-[100dvh] transition-transform duration-500 flex`}
+        className={`${showMenu ? "translate-x-0" : "translate-x-[100%]"} fixed top-0 left-0 w-full h-[100dvh] transition-transform duration-500 z-[1] flex`}
       >
         {/* The black right section start */}
         <div

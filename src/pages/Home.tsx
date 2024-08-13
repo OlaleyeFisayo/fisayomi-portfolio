@@ -7,7 +7,7 @@ import Navbar from "../components/Navbar";
 
 export default function Home() {
   const sections = useRef(null);
-  const currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear().toString();
   const currentMonth = new Date().getMonth();
 
   useGsap(sections);

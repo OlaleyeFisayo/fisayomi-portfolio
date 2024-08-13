@@ -1,9 +1,9 @@
 type loaderProps = {
-  currentYear: number;
+  currentYear: string;
 };
 
 type welcomeSectionProps = {
-  currentYear: number;
+  currentYear: string;
   currentMonth: number;
 };
 

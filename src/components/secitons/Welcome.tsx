@@ -18,7 +18,7 @@ export default function Welcome({
       const offsetY = e.clientY - rect.top;
 
       gsap.to(containerRef.current, {
-        duration: 0.3,
+        duration: 0.4,
         x: offsetX - rect.width / 2,
         y: offsetY - rect.height / 2,
         ease: "power1.inOut",
@@ -29,13 +29,16 @@ export default function Welcome({
 
   const mouseOut = () => {
     gsap.to(containerRef.current, {
-      duration: 0.3,
+      duration: 0.4,
       x: 0,
       y: 0,
       ease: "power1.inOut",
     });
   };
   const nameArray = new Array(3).fill("HEY, I'M FISAYO.");
+  const anchorNavs = ["services", "work", "about"];
+
+  const linkNavs = ["contact"];
 
   return (
     <div
@@ -62,10 +65,33 @@ export default function Welcome({
             />
           </div>
         </Link>
-        <div>
+        {/* <div>
           <h1 className="select-none font-extrabold text-neutral-400">
-            Available for work {formatMonth(currentMonth)} {currentYear}
+            Available for work {formatMonth(currentMonth)} '
+            {currentYear.slice(2, 4)}
           </h1>
+        </div> */}
+        <div className="flex gap-2 z-30">
+          {anchorNavs.map((nav) => (
+            <span key={nav}>
+              <a
+                href={`#${nav}`}
+                className="font-extrabold nav-slide uppercase text-neutral-400"
+              >
+                {nav},
+              </a>
+            </span>
+          ))}
+          {linkNavs.map((nav) => (
+            <span key={nav}>
+              <Link
+                to={`/${nav}`}
+                className="font-extrabold nav-slide uppercase text-neutral-400"
+              >
+                {nav}
+              </Link>
+            </span>
+          ))}
         </div>
       </nav>
       <section className="w-full home-height relative flex justify-center items-center py-8">
