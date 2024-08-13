@@ -1,4 +1,3 @@
-import gsap from "gsap";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -8,6 +7,16 @@ export default function Navbar() {
   function toggleMenu() {
     setShowMenu(!showMenu);
   }
+
+  useEffect(() => {
+    if (showMenu) {
+      document.documentElement.style.overflow = "hidden";
+    }
+
+    return () => {
+      document.documentElement.style.overflow = "auto";
+    };
+  }, [showMenu]);
 
   return (
     <div className="relative">
