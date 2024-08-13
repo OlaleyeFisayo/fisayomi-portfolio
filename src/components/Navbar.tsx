@@ -39,7 +39,7 @@ export default function Navbar() {
               <a
                 href="#home"
                 onClick={toggleMenu}
-                className="text-6xl font-bold nav-slide capitalize"
+                className="text-6xl font-extrabold nav-slide uppercase tracking-wider"
               >
                 Home
               </a>
@@ -48,7 +48,7 @@ export default function Navbar() {
               <a
                 href="#services"
                 onClick={toggleMenu}
-                className="text-6xl font-bold nav-slide capitalize"
+                className="text-6xl font-extrabold nav-slide uppercase tracking-wider"
               >
                 services
               </a>
@@ -57,7 +57,7 @@ export default function Navbar() {
               <a
                 href="#work"
                 onClick={toggleMenu}
-                className="text-6xl font-bold nav-slide capitalize"
+                className="text-6xl font-extrabold nav-slide uppercase tracking-wider"
               >
                 work
               </a>
@@ -66,7 +66,7 @@ export default function Navbar() {
               <a
                 href="#about"
                 onClick={toggleMenu}
-                className="text-6xl font-bold nav-slide capitalize"
+                className="text-6xl font-extrabold nav-slide uppercase tracking-wider"
               >
                 about
               </a>
@@ -75,7 +75,7 @@ export default function Navbar() {
               <Link
                 to="/contact"
                 onClick={toggleMenu}
-                className="text-6xl font-bold nav-slide capitalize"
+                className="text-6xl font-extrabold nav-slide uppercase tracking-wider"
               >
                 contact
               </Link>
