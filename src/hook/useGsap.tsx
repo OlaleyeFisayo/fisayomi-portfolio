@@ -6,6 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 export function useGsap(sectionRef: React.MutableRefObject<null>) {
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
+      // loader section
       const t1 = gsap.timeline();
       t1.from("#title-1", {
         opacity: 0,
@@ -14,12 +15,12 @@ export function useGsap(sectionRef: React.MutableRefObject<null>) {
       })
         .from("#title-2", {
           opacity: 0,
-          duration: 0.7,
+          duration: 0.5,
           y: "-=30",
           stagger: 1,
         })
         .to("#title-2", {
-          duration: 0.7,
+          duration: 0.5,
         })
         .to("#loader", {
           stagger: 1,
@@ -48,12 +49,14 @@ export function useGsap(sectionRef: React.MutableRefObject<null>) {
         },
       });
       t2.to(["#home", "#about"], {
+        duration: 0.2,
         backgroundColor: "black",
         ease: "back.in",
       })
         .to("#hamburger", {
+          duration: 0.2,
           opacity: 1,
-          backgroundColor: "rgba(248 250 252, 0.85)",
+          backgroundColor: "rgba(248, 250, 252)",
         })
         .to(["#ellipse", "#name-container"], {
           opacity: 0,

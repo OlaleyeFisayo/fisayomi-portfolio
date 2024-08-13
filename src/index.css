@@ -19,12 +19,67 @@
   height: calc(100dvh - 86px);
 }
 
-.showNav {
-    transform: translateX(0);
+/* Nav Slider Start*/
+.nav-slide {
+    width: fit-content;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
 }
-.hideNav {
+
+.nav-slide::before {
+    content: '';
+    width: 100%;
+    border-bottom: 2px solid;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-100%);
+    transition: 500ms ease-in-out;
+}
+
+.nav-slide:hover::before {
     transform: translateX(100%);
 }
+/* Nav Slider end*/
+
+/* button animation start*/
+.button-animation {
+    border: 1px solid black;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: 500ms ease-in-out;
+}
+.button-animation::after {
+    content: attr(data-text);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    display: inline-flex;
+    background: #000;
+    border-radius: 50%;
+    transition: 500ms ease-in-out;
+    transform: translateY(100%);
+    z-index: 0 !important;
+    -webkit-text-fill-color: rgb(248, 250, 252);
+    color: rgb(248, 250, 252);
+    justify-content: center;
+    align-items: center;
+}
+.button-animation:hover {
+    -webkit-text-fill-color: rgb(248, 250, 252);
+    color: rgb(248, 250, 252);
+}
+.button-animation:hover::after {
+    transform: translateY(0);
+    border-radius: 2rem;
+}
+/* button animation end */
 
 @layer components {
   .debug {
