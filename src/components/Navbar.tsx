@@ -85,6 +85,7 @@ export default function Navbar() {
                   href={link.link}
                   data-text={link.name}
                   key={link.name}
+                  target="_blank"
                 >
                   {link.name}
                 </a>

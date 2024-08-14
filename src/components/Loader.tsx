@@ -1,12 +1,10 @@
 import { useGSAP } from "@gsap/react";
 import { loaderProps } from "../types";
 import gsap from "gsap";
-import { useEffect, useRef, useState } from "react";
+import { LoaderHook } from "../hook/LoaderHook";
 
 export default function Loader({ currentYear }: loaderProps) {
-  const [loading, setLoading] = useState(0);
-  const [step] = useState(Math.ceil(Math.random() * 10));
-  const timeInterval = useRef<any>(null);
+  const { loading } = LoaderHook();
 
   useGSAP(() => {
     gsap.from(["#title-1", "#title-2"], {
@@ -16,30 +14,6 @@ export default function Loader({ currentYear }: loaderProps) {
       stagger: 0.5,
     });
   });
-
-  useEffect(() => {
-    timeInterval.current = setInterval(() => {
-      setLoading((prev) => prev + step);
-    }, 150);
-    return () => {
-      clearInterval(timeInterval.current);
-    };
-  }, []);
-
-  useEffect(() => {
-    if (loading >= 100) {
-      gsap.to("#loader", {
-        stagger: 1,
-        ease: "power1.out",
-        yPercent: -100,
-        duration: 1,
-        borderRadius: "50%",
-        display: "none",
-      });
-      clearInterval(timeInterval.current);
-      setLoading(0);
-    }
-  }, [loading]);
 
   return (
     <section
@@ -51,7 +25,8 @@ export default function Loader({ currentYear }: loaderProps) {
           OlaleyeFisayo
         </h1>
         <p className="text-center text-4xl z-40 block" id="title-2">
-          <span className="font-extrabold">@{currentYear}</span> Demofolio
+          <span className="font-extrabold">@'{currentYear.slice(2, 4)}</span>{" "}
+          Demofolio
         </p>
         <div className="absolute bottom-4 right-9">
           <h1 className="font-bold uppercase text-lg">Loading: {loading}%</h1>
