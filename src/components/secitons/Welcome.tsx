@@ -84,7 +84,9 @@ export default function Welcome({
           ))}
         </div>
       </nav>
-      <section className="w-full home-height relative flex justify-center items-center py-8"></section>
+      <section className="w-full home-height relative py-8">
+        {/* <h1 className="text-neutral-500 xl:text-8xl lg:text-7xl md:text-5xl text-4xl font-bold uppercase">Festus-Olaleye Oluwafisayomi O.</h1> */}
+      </section>
     </div>
   );
 }

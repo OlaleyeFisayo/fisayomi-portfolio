@@ -65,6 +65,7 @@ export default function Navbar() {
                 key={nav}
                 className={`${showMenu ? "translate-y-[0] opacity-100" : "translate-y-[-100%] opacity-0"} text-neutral-300 transition-all duration-1000 text-6xl font-extrabold nav-slide uppercase tracking-wider`}
                 link={nav}
+                onClick={toggleMenu}
               />
             ))}
           </div>
@@ -86,6 +87,7 @@ export default function Navbar() {
                   className="button-animation text-neutral-300"
                   href={link.link}
                   data-text={link.name}
+                  key={link.name}
                 >
                   {link.name}
                 </a>

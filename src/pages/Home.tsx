@@ -10,7 +10,7 @@ export default function Home() {
   const currentYear = new Date().getFullYear().toString();
   const currentMonth = new Date().getMonth();
 
-  useGsap(sections);
+  //   useGsap(sections);
 
   return (
     <div className="font-Grotesk relative transition-all" ref={sections}>

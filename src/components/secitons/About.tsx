@@ -1,4 +1,31 @@
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 export default function About() {
+  useGSAP(() => {
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: "#about",
+          start: "top 60%",
+          toggleActions: "restart none none reverse",
+        },
+      })
+      .to(["#home", "#about"], {
+        duration: 0.1,
+        backgroundColor: "black",
+        ease: "back.in",
+      })
+      .to("#hamburger", {
+        duration: 0.1,
+        opacity: 1,
+        display: "flex",
+      });
+  });
+
   return (
     <section
       id="about"
