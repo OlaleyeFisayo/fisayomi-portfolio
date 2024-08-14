@@ -44,20 +44,19 @@ export function useGsap(sectionRef: React.MutableRefObject<null>) {
       const t2 = gsap.timeline({
         scrollTrigger: {
           trigger: "#about",
-          start: "top 20%",
+          start: "bottom bottom",
           toggleActions: "restart none none reverse",
         },
       });
       t2.to(["#home", "#about"], {
-        duration: 0.2,
+        duration: 0.1,
         backgroundColor: "black",
         ease: "back.in",
       })
         .to("#hamburger", {
-          duration: 0.2,
+          duration: 0.1,
           opacity: 1,
           display: "flex",
-          //   backgroundColor: "rgba(248, 250, 252)",
         })
         .to(["#ellipse", "#name-container"], {
           opacity: 0,

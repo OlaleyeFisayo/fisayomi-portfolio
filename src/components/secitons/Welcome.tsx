@@ -4,6 +4,7 @@ import logo from "../../assets/logo.png";
 import { formatMonth } from "../../functions";
 import { welcomeSectionProps } from "../../types";
 import gsap from "gsap";
+import Links from "../Links";
 
 export default function Welcome({
   currentYear,
@@ -35,9 +36,7 @@ export default function Welcome({
       ease: "power1.inOut",
     });
   };
-  const nameArray = new Array(3).fill("HEY, I'M FISAYO.");
-  const anchorNavs = ["services", "work", "about"];
-  const linkNavs = ["contact"];
+  const navsList = ["#services", "#work", "#about", "/contact"];
 
   return (
     <div
@@ -76,46 +75,16 @@ export default function Welcome({
           </h1>
         </div> */}
         <div className="flex gap-4">
-          {anchorNavs.map((nav) => (
-            <span key={nav}>
-              <a
-                href={`#${nav}`}
-                className="nav-slide uppercase text-neutral-500"
-              >
-                {nav},
-              </a>
-            </span>
-          ))}
-          {linkNavs.map((nav) => (
-            <span key={nav}>
-              <Link
-                to={`/${nav}`}
-                className="nav-slide uppercase text-neutral-500"
-              >
-                {nav}
-              </Link>
-            </span>
+          {navsList.map((nav) => (
+            <Links
+              key={nav}
+              className="nav-slide uppercase text-neutral-500 tracking-wide"
+              link={nav}
+            />
           ))}
         </div>
       </nav>
-      <section className="w-full home-height relative flex justify-center items-center py-8">
-        <div id="ellipse" className="absolute bg-neutral-800 ellipse"></div>
-        <div id="name-container" className="relative flex flex-col gap-9">
-          {nameArray.map((name, index) => {
-            return (
-              <h1
-                id={`name-title-${index + 1}`}
-                className={`font-extrabold ${
-                  index % 2 === 0 ? "text-neutral-500" : "text-black textStroke"
-                } lg:text-8xl md:text-7xl sm:text-6xl text-4xl text-center block select-none w-full`}
-                key={index}
-              >
-                {name}
-              </h1>
-            );
-          })}
-        </div>
-      </section>
+      <section className="w-full home-height relative flex justify-center items-center py-8"></section>
     </div>
   );
 }

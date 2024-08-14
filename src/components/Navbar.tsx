@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Links from "./Links";
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -20,6 +21,7 @@ export default function Navbar() {
 
   const anchorNavs = ["home", "services", "work", "about"];
   const linkNavs = ["contact"];
+  const navsList = ["#home", "#services", "#work", "#about", "/contact"];
   const socialLinks = [
     {
       name: "LinkedIn",
@@ -39,10 +41,10 @@ export default function Navbar() {
         id="hamburger"
       >
         <div
-          className={`w-12 h-1 bg-black rounded-full transition-all ${showMenu && "rotate-45 relative translate-y-2"}`}
+          className={`w-12 h-[3px] bg-neutral-300 rounded-full transition-all ${showMenu && "rotate-45 relative translate-y-2"}`}
         ></div>
         <div
-          className={`w-12 h-1 bg-black rounded-full transition-all ${showMenu && "-rotate-45 relative -translate-y-2"}`}
+          className={`w-12 h-[3px] bg-neutral-300 rounded-full transition-all ${showMenu && "-rotate-45 relative -translate-y-2"}`}
         ></div>
       </div>
       <nav
@@ -51,36 +53,21 @@ export default function Navbar() {
       >
         {/* The black right section start */}
         <div
-          className={`w-2/4 bg-black ${showMenu ? "opacity-5" : "opacity-0"}`}
+          className={`w-3/4 bg-black ${showMenu ? "opacity-5" : "opacity-0"}`}
           onClick={toggleMenu}
           id="navbar-content"
         ></div>
         {/* The black right section end */}
         <div className="w-2/4 shutter bg-neutral-500 h-screen rounded-lg px-6 pb-6 pt-28">
-          <ul className="flex flex-col gap-1">
-            {anchorNavs.map((nav) => (
-              <li key={nav}>
-                <a
-                  href={`#${nav}`}
-                  onClick={toggleMenu}
-                  className={`${showMenu ? "translate-y-[0] opacity-100" : "translate-y-[-100%] opacity-0"} text-neutral-300 transition-all duration-1000 text-6xl font-extrabold nav-slide uppercase tracking-wider`}
-                >
-                  {nav}
-                </a>
-              </li>
+          <div className="flex flex-col gap-1">
+            {navsList.map((nav) => (
+              <Links
+                key={nav}
+                className={`${showMenu ? "translate-y-[0] opacity-100" : "translate-y-[-100%] opacity-0"} text-neutral-300 transition-all duration-1000 text-6xl font-extrabold nav-slide uppercase tracking-wider`}
+                link={nav}
+              />
             ))}
-            {linkNavs.map((nav) => (
-              <li key={nav}>
-                <Link
-                  to={`/${nav}`}
-                  onClick={toggleMenu}
-                  className={`${showMenu ? "translate-y-[0] opacity-100" : "translate-y-[-100%] opacity-0"} text-neutral-300 transition-all duration-1000 text-6xl font-extrabold nav-slide uppercase tracking-wider`}
-                >
-                  {nav}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          </div>
           <footer className="absolute bottom-6">
             <div>
               <h1 className="text-xl uppercase text-neutral-700 tracking-widest font-extrabold">
