@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import Links from "./Links";
 
 export default function Navbar() {
@@ -19,8 +18,6 @@ export default function Navbar() {
     };
   }, [showMenu]);
 
-  const anchorNavs = ["home", "services", "work", "about"];
-  const linkNavs = ["contact"];
   const navsList = ["#home", "#services", "#work", "#about", "/contact"];
   const socialLinks = [
     {
