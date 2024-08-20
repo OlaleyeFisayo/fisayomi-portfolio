@@ -10,7 +10,7 @@ export default function Home() {
   const currentMonth = new Date().getMonth();
 
   return (
-    <div className="font-Grotesk relative transition-all" ref={sections}>
+    <div className="relative font-Grotesk transition-all" ref={sections}>
       <Navbar />
       <Loader currentYear={currentYear} />
       <Welcome currentMonth={currentMonth} currentYear={currentYear} />

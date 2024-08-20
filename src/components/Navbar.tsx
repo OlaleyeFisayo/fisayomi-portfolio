@@ -33,20 +33,20 @@ export default function Navbar() {
   return (
     <div className="relative">
       <div
-        className={`hidden flex-col gap-2 fixed top-8 right-4 px-3 py-7 h-auto cursor-pointer rounded-full bg-neutral-500 shutter opacity-0 hover:scale-90 transition-all z-20`}
+        className={`shutter fixed right-4 top-8 z-20 hidden h-auto cursor-pointer flex-col gap-2 rounded-full bg-neutral-500 px-3 py-7 opacity-0 transition-all hover:scale-90`}
         onClick={toggleMenu}
         id="hamburger"
       >
         <div
-          className={`w-12 h-[3px] bg-neutral-300 rounded-full transition-all ${showMenu && "rotate-45 relative translate-y-2"}`}
+          className={`h-[3px] w-12 rounded-full bg-neutral-300 transition-all ${showMenu && "relative translate-y-2 rotate-45"}`}
         ></div>
         <div
-          className={`w-12 h-[3px] bg-neutral-300 rounded-full transition-all ${showMenu && "-rotate-45 relative -translate-y-2"}`}
+          className={`h-[3px] w-12 rounded-full bg-neutral-300 transition-all ${showMenu && "relative -translate-y-2 -rotate-45"}`}
         ></div>
       </div>
       <nav
         id="navbar"
-        className={`${showMenu ? "translate-x-0" : "translate-x-[100%]"} fixed top-0 left-0 w-full h-[100dvh] transition-transform duration-500 z-[1] flex`}
+        className={`${showMenu ? "translate-x-0" : "translate-x-[100%]"} fixed left-0 top-0 z-[1] flex h-[100dvh] w-full transition-transform duration-500`}
       >
         {/* The black right section start */}
         <div
@@ -55,12 +55,12 @@ export default function Navbar() {
           id="navbar-content"
         ></div>
         {/* The black right section end */}
-        <div className="w-2/4 shutter bg-neutral-500 h-screen rounded-lg px-6 pb-6 pt-28">
+        <div className="shutter h-screen w-2/4 rounded-lg bg-neutral-500 px-6 pb-6 pt-28">
           <div className="flex flex-col gap-1">
             {navsList.map((nav) => (
               <Links
                 key={nav}
-                className={`${showMenu ? "translate-y-[0] opacity-100" : "translate-y-[-100%] opacity-0"} text-neutral-300 transition-all duration-1000 text-6xl font-extrabold nav-slide uppercase tracking-wider`}
+                className={`${showMenu ? "translate-y-[0] opacity-100" : "translate-y-[-100%] opacity-0"} nav-slide text-6xl font-extrabold uppercase tracking-wider text-neutral-300 transition-all duration-1000`}
                 link={nav}
                 onClick={toggleMenu}
               />
@@ -68,7 +68,7 @@ export default function Navbar() {
           </div>
           <footer className="absolute bottom-6">
             <div>
-              <h1 className="text-xl uppercase text-neutral-700 tracking-widest font-extrabold">
+              <h1 className="text-xl font-extrabold uppercase tracking-widest text-neutral-700">
                 Email Address:
               </h1>
               <a

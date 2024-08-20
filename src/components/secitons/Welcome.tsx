@@ -41,15 +41,15 @@ export default function Welcome({
   return (
     <div
       id="home"
-      className="relative shutter bg-neutral-300 w-full px-9 h-[100dvh]"
+      className="shutter relative h-[100dvh] w-full bg-neutral-300 px-9"
     >
       <nav
-        className="flex justify-between items-center py-4 gap-2"
+        className="section-max-width flex items-center justify-between gap-2 py-4"
         id="welcome-nav"
       >
         <Link
           to="/"
-          className="max-w-[70px] h-full relative"
+          className="relative h-full max-w-[70px]"
           onMouseOut={mouseOut}
           onMouseMove={moveLogo}
         >
@@ -57,14 +57,14 @@ export default function Welcome({
             <img
               src={logo}
               alt="logo"
-              className="w-full h-full"
+              className="h-full w-full"
               id="image"
               onMouseOut={mouseOut}
             />
           </div>
         </Link>
         <div>
-          <h1 className="select-none font-normal text-neutral-500 text-xl uppercase">
+          <h1 className="select-none text-lg font-normal uppercase text-neutral-500 sm:text-xl">
             web developer
           </h1>
         </div>
@@ -74,18 +74,18 @@ export default function Welcome({
             {currentYear.slice(2, 4)}
           </h1>
         </div> */}
-        <div className="flex gap-4">
+        <div className="flex flex-col sm:flex-row sm:gap-4">
           {navsList.map((nav) => (
             <Links
               key={nav}
-              className="nav-slide uppercase text-neutral-500 tracking-wide"
+              className="nav-slide uppercase tracking-wide text-neutral-500"
               link={nav}
             />
           ))}
         </div>
       </nav>
-      <section className="w-full home-height relative py-8">
-        {/* <h1 className="text-neutral-500 xl:text-8xl lg:text-7xl md:text-5xl text-4xl font-bold uppercase">Festus-Olaleye Oluwafisayomi O.</h1> */}
+      <section className="section-max-width relative h-[calc(100dvh-103px)] w-full py-8">
+        {/* <h1 className="text-black xl:text-[10rem] lg:text-9xl md:text-5xl text-4xl font-bold uppercase m-auto flex justify-center items-center">Olaleye Fisayo</h1> */}
       </section>
     </div>
   );

@@ -18,18 +18,21 @@ export default function Loader({ currentYear }: loaderProps) {
   return (
     <section
       id="loader"
-      className="h-screen w-screen bg-black text-neutral-400 fixed z-30 shutter overflow-hidden"
+      className="shutter fixed z-30 h-screen w-screen overflow-hidden bg-black text-neutral-400"
     >
-      <div className=" w-screen h-screen flex justify-center items-center px-1 py-1 flex-col relative">
-        <h1 className="text-center text-4xl z-40" id="title-1">
+      <div className="relative flex h-screen w-screen flex-col items-center justify-center px-1 py-1">
+        <h1 className="z-40 text-center text-4xl" id="title-1">
           OlaleyeFisayo
         </h1>
-        <p className="text-center text-4xl z-40 block" id="title-2">
-          <span className="font-extrabold">@'{currentYear.slice(2, 4)}</span>{" "}
-          Demofolio
+        <p className="z-40 block text-center text-4xl" id="title-2">
+          @Portfolio
+          <span className="font-extrabold">
+            {" "}
+            '{currentYear.slice(2, 4)}
+          </span>{" "}
         </p>
         <div className="absolute bottom-4 right-9">
-          <h1 className="font-bold uppercase text-lg">Loading: {loading}%</h1>
+          <h1 className="text-lg font-bold uppercase">Loading: {loading}%</h1>
         </div>
       </div>
     </section>

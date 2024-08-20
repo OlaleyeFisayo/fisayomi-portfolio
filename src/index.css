@@ -19,6 +19,12 @@
   height: calc(100dvh - 103px);
 }
 
+.section-max-width {
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+}
+
 /* Nav Slider Start*/
 .nav-slide {
     width: fit-content;
