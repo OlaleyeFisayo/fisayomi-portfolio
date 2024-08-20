@@ -1,8 +1,5 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export default function About() {
   useGSAP(() => {
@@ -29,7 +26,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="shutter grid min-h-[100dvh] w-full place-items-center bg-neutral-300 px-9"
+      className="shutter grid min-h-[100dvh] w-full place-items-center bg-neutral-300 px-5"
     >
       <div className="section-max-width">
         <h1 className="text-4xl font-bold text-neutral-500 md:text-5xl lg:text-7xl xl:text-8xl">

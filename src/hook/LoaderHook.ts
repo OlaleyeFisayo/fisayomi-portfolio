@@ -2,14 +2,17 @@ import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
 
 export function LoaderHook() {
+  const stepArray = [11, 15, 10, 9];
   const [loading, setLoading] = useState(0);
-  const [step] = useState(Math.ceil(Math.random() * 10));
+  const [step] = useState(
+    stepArray[Math.floor(Math.random() * stepArray.length)],
+  );
   const timeInterval = useRef<any>(null);
 
   useEffect(() => {
     timeInterval.current = setInterval(() => {
       setLoading((prev) => prev + step);
-    }, 150);
+    }, 200);
     return () => {
       clearInterval(timeInterval.current);
     };
@@ -28,6 +31,10 @@ export function LoaderHook() {
       clearInterval(timeInterval.current);
       setLoading(0);
     }
+
+    return () => {
+      // setLoading(0)
+    };
   }, [loading]);
 
   return { loading };

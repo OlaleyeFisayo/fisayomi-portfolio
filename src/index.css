@@ -25,6 +25,125 @@
     margin: auto;
 }
 
+.welcome-header {
+    font-size: 12.5rem;
+    line-height: 11.5rem;
+}
+@media (max-width: 1507px) {
+    .welcome-header {
+        font-size: 12rem;
+        line-height: 11rem;
+    }
+}
+@media (max-width: 1449px) {
+    .welcome-header {
+        font-size: 11.5rem;
+        line-height: 10.5rem;
+    }
+}
+@media (max-width: 1361px) {
+    .welcome-header {
+        font-size: 11rem;
+        line-height: 10rem;
+    }
+}
+@media (max-width: 1303px) {
+    .welcome-header {
+        font-size: 10.5rem;
+        line-height: normal;
+    }
+}
+@media (max-width: 1245px) {
+    .welcome-header {
+        font-size: 10rem;
+        line-height: normal;
+    }
+}
+@media (max-width: 1187px) {
+    .welcome-header {
+        font-size: 9.5rem;
+        line-height: normal;
+    }
+}
+@media (max-width: 1130px) {
+    .welcome-header {
+        font-size: 9rem;
+        line-height: normal;
+    }
+}
+@media (max-width: 1073px) {
+    .welcome-header {
+        font-size: 8.5rem;
+        line-height: normal;
+    }
+}
+@media (max-width: 1015px) {
+    .welcome-header {
+        font-size: 8rem;
+        line-height: normal;
+    }
+}
+@media (max-width: 958px) {
+    .welcome-header {
+        font-size: 7.5rem;
+        line-height: normal;
+    }
+}
+@media (max-width: 900px) {
+    .welcome-header {
+        font-size: 7rem;
+        line-height: normal;
+    }
+}
+@media (max-width: 843px) {
+    .welcome-header {
+        font-size: 6.5rem;
+        line-height: normal;
+    }
+}
+@media (max-width: 786px) {
+    .welcome-header {
+        font-size: 6rem;
+        line-height: normal;
+    }
+}
+@media (max-width: 728px) {
+    .welcome-header {
+        font-size: 5.5rem;
+        line-height: normal;
+    }
+}
+@media (max-width: 671px) {
+    .welcome-header {
+        font-size: 5rem;
+        line-height: normal;
+    }
+}
+@media (max-width: 613px) {
+    .welcome-header {
+        font-size: 4.5rem;
+        line-height: normal;
+    }
+}
+@media (max-width: 556px) {
+    .welcome-header {
+        font-size: 4rem;
+        line-height: normal;
+    }
+}
+@media (max-width: 499px) {
+    .welcome-header {
+        font-size: 3.5rem;
+        line-height: normal;
+    }
+}
+@media (max-width: 384px) {
+    .welcome-header {
+        font-size: 2.5rem;
+        line-height: normal;
+    }
+}
+
 /* Nav Slider Start*/
 .nav-slide {
     width: fit-content;

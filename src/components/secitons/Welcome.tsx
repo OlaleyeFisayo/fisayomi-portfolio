@@ -36,12 +36,13 @@ export default function Welcome({
       ease: "power1.inOut",
     });
   };
+
   const navsList = ["#services", "#work", "#about", "/contact"];
 
   return (
     <div
       id="home"
-      className="shutter relative h-[100dvh] w-full bg-neutral-300 px-9"
+      className="shutter relative h-[100dvh] w-full bg-neutral-300 px-5"
     >
       <nav
         className="section-max-width flex items-center justify-between gap-2 py-4"
@@ -68,12 +69,7 @@ export default function Welcome({
             web developer
           </h1>
         </div>
-        {/* <div>
-          <h1 className="select-none font-extrabold text-neutral-400">
-            Available for work {formatMonth(currentMonth)} '
-            {currentYear.slice(2, 4)}
-          </h1>
-        </div> */}
+
         <div className="flex flex-col sm:flex-row sm:gap-4">
           {navsList.map((nav) => (
             <Links
@@ -84,8 +80,32 @@ export default function Welcome({
           ))}
         </div>
       </nav>
-      <section className="section-max-width relative h-[calc(100dvh-157px)] w-full py-8 sm:h-[calc(100dvh-103px)]">
-        {/* <h1 className="text-black xl:text-[10rem] lg:text-9xl md:text-5xl text-4xl font-bold uppercase m-auto flex justify-center items-center">Olaleye Fisayo</h1> */}
+      <section className="section-max-width relative grid h-[calc(100dvh-157px)] w-full items-end py-8 sm:h-[calc(100dvh-103px)]">
+        <h1
+          className="welcome-header to flex items-center justify-center text-clip font-bold uppercase text-neutral-900"
+          id="name-title"
+        >
+          Hey, I'm Fisayo
+        </h1>
+        <div className="grid grid-cols-2 justify-between gap-4">
+          <h2 className="w-[400px] max-w-full text-neutral-900" id="brief-info">
+            Frustrated with websites that don't reflect your brand or drive
+            growth? I craft premium web experiences that captivate and help you
+            focus on growing your business.
+          </h2>
+          <div>
+            <h1
+              className="select-none text-right text-xl font-extrabold text-neutral-600"
+              id="work-title"
+            >
+              Available for work:
+              <span className="block text-6xl text-neutral-600">
+                {formatMonth(currentMonth).slice(0, 3)} '
+                {currentYear.slice(2, 4)}
+              </span>
+            </h1>
+          </div>
+        </div>
       </section>
     </div>
   );
