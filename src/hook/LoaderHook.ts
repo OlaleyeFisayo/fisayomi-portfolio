@@ -31,10 +31,6 @@ export function LoaderHook() {
       clearInterval(timeInterval.current);
       setLoading(0);
     }
-
-    return () => {
-      // setLoading(0)
-    };
   }, [loading]);
 
   return { loading };
