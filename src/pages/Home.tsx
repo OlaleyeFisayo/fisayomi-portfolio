@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <div
-      className="relative bg-neutral-300 font-Grotesk transition-all"
+      className="shutter relative bg-neutral-300 font-Grotesk transition-all"
       ref={sections}
     >
       <Navbar />
@@ -20,7 +20,7 @@ export default function Home() {
       <Welcome currentMonth={currentMonth} currentYear={currentYear} />
       <div
         id="black-section"
-        className="shutter mx-5 min-h-[100dvh] overflow-hidden rounded-[2rem] bg-black"
+        className="shutter min-h-[100dvh] overflow-hidden rounded-3xl bg-black px-5"
       >
         <Services />
         <About />

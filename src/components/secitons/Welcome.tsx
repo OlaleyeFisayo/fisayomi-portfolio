@@ -47,6 +47,17 @@ export default function Welcome({
       delay: 1.65,
       duration: 1,
     });
+
+    gsap.to("#welcome-nav", {
+      scrollTrigger: {
+        trigger: "#black-section",
+        start: "top bottom",
+        pin: "#home",
+        scrub: true,
+      },
+      yPercent: -100,
+      duration: 0.5,
+    });
   });
 
   return (

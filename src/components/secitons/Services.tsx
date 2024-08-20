@@ -1,3 +1,8 @@
 export default function Services() {
-  return <div className="section-max-width min-h-[100dvh] w-full"></div>;
+  return (
+    <div
+      className="section-max-width min-h-[100dvh] w-full"
+      id="services"
+    ></div>
+  );
 }

@@ -4,6 +4,7 @@
 
 * {
   scroll-behavior: smooth;
+  border: none;
 }
 
 @font-face {
@@ -11,9 +12,9 @@
   src: url("./assets/font/SpaceGrotesk-VariableFont_wght.ttf");
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     display: none;
-}
+} */
 
 .home-height {
   height: calc(100dvh - 103px);
