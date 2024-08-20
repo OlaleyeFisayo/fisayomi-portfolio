@@ -50,17 +50,17 @@ export default function Navbar() {
       >
         {/* The black right section start */}
         <div
-          className={`w-3/4 bg-black ${showMenu ? "opacity-5" : "opacity-0"}`}
+          className={`hidden bg-black sm:block sm:w-2/4 ${showMenu ? "opacity-5" : "opacity-0"}`}
           onClick={toggleMenu}
           id="navbar-content"
         ></div>
         {/* The black right section end */}
-        <div className="shutter h-screen w-2/4 rounded-lg bg-neutral-500 px-6 pb-6 pt-28">
+        <div className="shutter h-screen w-full rounded-lg bg-neutral-500 px-6 pb-6 pt-28 sm:w-3/4 lg:w-2/4">
           <div className="flex flex-col gap-1">
             {navsList.map((nav) => (
               <Links
                 key={nav}
-                className={`${showMenu ? "translate-y-[0] opacity-100" : "translate-y-[-100%] opacity-0"} nav-slide text-6xl font-extrabold uppercase tracking-wider text-neutral-300 transition-all duration-1000`}
+                className={`${showMenu ? "translate-y-[0] opacity-100" : "translate-y-[-100%] opacity-0"} nav-slide text-5xl font-extrabold uppercase tracking-wider text-neutral-300 transition-all duration-1000 sm:text-6xl`}
                 link={nav}
                 onClick={toggleMenu}
               />

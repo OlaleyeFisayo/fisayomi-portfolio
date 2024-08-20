@@ -84,7 +84,7 @@ export default function Welcome({
           ))}
         </div>
       </nav>
-      <section className="section-max-width relative h-[calc(100dvh-103px)] w-full py-8">
+      <section className="section-max-width relative h-[calc(100dvh-157px)] w-full py-8 sm:h-[calc(100dvh-103px)]">
         {/* <h1 className="text-black xl:text-[10rem] lg:text-9xl md:text-5xl text-4xl font-bold uppercase m-auto flex justify-center items-center">Olaleye Fisayo</h1> */}
       </section>
     </div>
