@@ -10,7 +10,7 @@ export default function Loader({ currentYear }: loaderProps) {
     gsap.from(["#title-1", "#title-2"], {
       opacity: 0,
       y: "-=30",
-      duration: 1,
+      duration: 0.5,
       stagger: 0.5,
     });
   });

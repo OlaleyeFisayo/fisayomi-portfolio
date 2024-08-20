@@ -2,11 +2,8 @@ import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
 
 export function LoaderHook() {
-  const stepArray = [11, 15, 10, 9];
   const [loading, setLoading] = useState(0);
-  const [step] = useState(
-    stepArray[Math.floor(Math.random() * stepArray.length)],
-  );
+  const [step] = useState(15);
   const timeInterval = useRef<any>(null);
 
   useEffect(() => {

@@ -5,6 +5,7 @@ import { formatMonth } from "../../functions/formatMonth";
 import { welcomeSectionProps } from "../../types";
 import gsap from "gsap";
 import Links from "../Links";
+import { useGSAP } from "@gsap/react";
 
 export default function Welcome({
   currentYear,
@@ -38,6 +39,15 @@ export default function Welcome({
   };
 
   const navsList = ["#services", "#work", "#about", "/contact"];
+
+  useGSAP(() => {
+    gsap.from(["#name-title", "#work-title", "#brief-info"], {
+      opacity: 0,
+      y: "-=50",
+      delay: 1.65,
+      duration: 1,
+    });
+  });
 
   return (
     <div
