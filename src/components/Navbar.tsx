@@ -33,7 +33,7 @@ export default function Navbar() {
   return (
     <div className="relative">
       <div
-        className={`shutter fixed right-4 top-8 z-20 hidden h-auto cursor-pointer flex-col gap-2 rounded-full bg-neutral-500 px-3 py-7 opacity-0 transition-all hover:scale-90`}
+        className={`shutter fixed right-4 top-8 z-40 hidden h-auto cursor-pointer flex-col gap-2 rounded-full bg-neutral-500 px-3 py-7 opacity-0 transition-all hover:scale-90`}
         onClick={toggleMenu}
         id="hamburger"
       >

@@ -6,6 +6,7 @@ import { welcomeSectionProps } from "../../types";
 import gsap from "gsap";
 import Links from "../Links";
 import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/all";
 
 export default function Welcome({
   currentYear,
@@ -38,7 +39,7 @@ export default function Welcome({
     });
   };
 
-  const navsList = ["#services", "#work", "#about", "/contact"];
+  const navsList = ["#services,", "#work,", "#about,", "/contact"];
 
   useGSAP(() => {
     gsap.from(["#name-title", "#work-title", "#brief-info"], {
@@ -46,17 +47,6 @@ export default function Welcome({
       y: "-=50",
       delay: 1.65,
       duration: 1,
-    });
-
-    gsap.to("#welcome-nav", {
-      scrollTrigger: {
-        trigger: "#black-section",
-        start: "top bottom",
-        pin: "#home",
-        scrub: true,
-      },
-      yPercent: -100,
-      duration: 0.5,
     });
   });
 

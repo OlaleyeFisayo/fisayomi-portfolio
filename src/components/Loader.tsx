@@ -18,7 +18,7 @@ export default function Loader({ currentYear }: loaderProps) {
   return (
     <section
       id="loader"
-      className="shutter fixed z-30 h-screen w-screen overflow-hidden bg-black text-neutral-400"
+      className="shutter fixed z-50 h-screen w-screen overflow-hidden bg-black text-neutral-400"
     >
       <div className="relative flex h-screen w-screen flex-col items-center justify-center px-1 py-1">
         <h1 className="z-40 text-center text-4xl" id="title-1">
