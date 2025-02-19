@@ -1,14 +1,13 @@
-import { RouterProvider } from "react-router-dom";
-import router from "./routes";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import gsap from "gsap";
-import { ScrollToPlugin } from "gsap/all";
-
-gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(ScrollToPlugin);
+import MyStack from "./components/section/my-stack";
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <section className="bg-black1 w-full h-[100dvh] grid px-16 py-10">
+      <div className="w-full m-auto h-full">
+        <MyStack />
+      </div>
+    </section>
+  );
 }
 
 export default App;

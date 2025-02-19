@@ -1,253 +1,120 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-* {
-  scroll-behavior: smooth;
-}
+@plugin "tailwindcss-animate";
 
-@font-face {
-  font-family: "Grotesk";
-  src: url("./assets/font/SpaceGrotesk-VariableFont_wght.ttf");
-}
+@custom-variant dark (&:is(.dark *));
 
-/* ::-webkit-scrollbar {
-    display: none;
-} */
-
-.home-height {
-  height: calc(100dvh - 103px);
-}
-
-.section-max-width {
-    max-width: 1440px;
-    width: 100%;
-    margin: auto;
-}
-
-.welcome-header {
-    font-size: 12.5rem;
-    line-height: 11.5rem;
-}
-@media (max-width: 1507px) {
-    .welcome-header {
-        font-size: 12rem;
-        line-height: 11rem;
-    }
-}
-@media (max-width: 1449px) {
-    .welcome-header {
-        font-size: 11.5rem;
-        line-height: 10.5rem;
-    }
-}
-@media (max-width: 1361px) {
-    .welcome-header {
-        font-size: 11rem;
-        line-height: 10rem;
-    }
-}
-@media (max-width: 1303px) {
-    .welcome-header {
-        font-size: 10.5rem;
-        line-height: normal;
-    }
-}
-@media (max-width: 1245px) {
-    .welcome-header {
-        font-size: 10rem;
-        line-height: normal;
-    }
-}
-@media (max-width: 1187px) {
-    .welcome-header {
-        font-size: 9.5rem;
-        line-height: normal;
-    }
-}
-@media (max-width: 1130px) {
-    .welcome-header {
-        font-size: 9rem;
-        line-height: normal;
-    }
-}
-@media (max-width: 1073px) {
-    .welcome-header {
-        font-size: 8.5rem;
-        line-height: normal;
-    }
-}
-@media (max-width: 1015px) {
-    .welcome-header {
-        font-size: 8rem;
-        line-height: normal;
-    }
-}
-@media (max-width: 958px) {
-    .welcome-header {
-        font-size: 7.5rem;
-        line-height: normal;
-    }
-}
-@media (max-width: 900px) {
-    .welcome-header {
-        font-size: 7rem;
-        line-height: normal;
-    }
-}
-@media (max-width: 843px) {
-    .welcome-header {
-        font-size: 6.5rem;
-        line-height: normal;
-    }
-}
-@media (max-width: 786px) {
-    .welcome-header {
-        font-size: 6rem;
-        line-height: normal;
-    }
-}
-@media (max-width: 728px) {
-    .welcome-header {
-        font-size: 5.5rem;
-        line-height: normal;
-    }
-}
-@media (max-width: 671px) {
-    .welcome-header {
-        font-size: 5rem;
-        line-height: normal;
-    }
-}
-@media (max-width: 613px) {
-    .welcome-header {
-        font-size: 4.5rem;
-        line-height: normal;
-    }
-}
-@media (max-width: 556px) {
-    .welcome-header {
-        font-size: 4rem;
-        line-height: normal;
-    }
-}
-@media (max-width: 499px) {
-    .welcome-header {
-        font-size: 3.5rem;
-        line-height: normal;
-    }
-}
-@media (max-width: 384px) {
-    .welcome-header {
-        font-size: 2.5rem;
-        line-height: normal;
-    }
+:root {
+  --background: hsl(0 0% 100%);
+  --foreground: hsl(240 10% 3.9%);
+  --card: hsl(0 0% 100%);
+  --card-foreground: hsl(240 10% 3.9%);
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(240 10% 3.9%);
+  --primary: hsl(240 5.9% 10%);
+  --primary-foreground: hsl(0 0% 98%);
+  --secondary: hsl(240 4.8% 95.9%);
+  --secondary-foreground: hsl(240 5.9% 10%);
+  --muted: hsl(240 4.8% 95.9%);
+  --muted-foreground: hsl(240 3.8% 46.1%);
+  --accent: hsl(240 4.8% 95.9%);
+  --accent-foreground: hsl(240 5.9% 10%);
+  --destructive: hsl(0 84.2% 60.2%);
+  --destructive-foreground: hsl(0 0% 98%);
+  --border: hsl(240 5.9% 90%);
+  --input: hsl(240 5.9% 90%);
+  --ring: hsl(240 10% 3.9%);
+  --chart-1: hsl(12 76% 61%);
+  --chart-2: hsl(173 58% 39%);
+  --chart-3: hsl(197 37% 24%);
+  --chart-4: hsl(43 74% 66%);
+  --chart-5: hsl(27 87% 67%);
+  --radius: 0.6rem;
 }
 
-/* Nav Slider Start*/
-.nav-slide {
-    width: fit-content;
-    overflow: hidden;
-    display: inline-block;
-    position: relative;
+.dark {
+  --background: hsl(240 10% 3.9%);
+  --foreground: hsl(0 0% 98%);
+  --card: hsl(240 10% 3.9%);
+  --card-foreground: hsl(0 0% 98%);
+  --popover: hsl(240 10% 3.9%);
+  --popover-foreground: hsl(0 0% 98%);
+  --primary: hsl(0 0% 98%);
+  --primary-foreground: hsl(240 5.9% 10%);
+  --secondary: hsl(240 3.7% 15.9%);
+  --secondary-foreground: hsl(0 0% 98%);
+  --muted: hsl(240 3.7% 15.9%);
+  --muted-foreground: hsl(240 5% 64.9%);
+  --accent: hsl(240 3.7% 15.9%);
+  --accent-foreground: hsl(0 0% 98%);
+  --destructive: hsl(0 62.8% 30.6%);
+  --destructive-foreground: hsl(0 0% 98%);
+  --border: hsl(240 3.7% 15.9%);
+  --input: hsl(240 3.7% 15.9%);
+  --ring: hsl(240 4.9% 83.9%);
+  --chart-1: hsl(220 70% 50%);
+  --chart-2: hsl(160 60% 45%);
+  --chart-3: hsl(30 80% 55%);
+  --chart-4: hsl(280 65% 60%);
+  --chart-5: hsl(340 75% 55%);
 }
 
-.nav-slide::before {
-    content: '';
-    width: 100%;
-    border-bottom: 2px solid;
-    position: absolute;
-    bottom: 0;
-    transform: translateX(-100%);
-    transition: 500ms ease-in-out;
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
 }
 
-.nav-slide:hover::before {
-    transform: translateX(100%);
-}
-/* Nav Slider end*/
-
-/* button animation start*/
-.button-animation {
-    border: 1px solid #404040;
-    border-radius: 2rem;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    transition: 250ms ease-in-out;
-}
-.button-animation::after {
-    content: "";
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    height: 100%;
-    display: inline-flex;
-    background: #404040;
-    border-radius: 50%;
-    transition: 250ms ease-in-out;
-    transform: translateY(100%);
-    z-index: 0 !important;
-    color: #d4d4d4;
-    justify-content: center;
-    align-items: center;
-}
-.button-animation:hover {
-    color: #d4d4d4;
-}
-.button-animation:hover::after {
-    transform: translateY(0);
-    border-radius: 0;
-    content: attr(data-text);
-}
-/* button animation end */
-
-@layer components {
-  .debug {
-    border: 1px solid red;
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
   }
-  .shutter {
-    background-image: url("./assets/shutter.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: difference;
+  body {
+    @apply bg-background text-foreground;
   }
-  .ellipse {
-    width: 100%;
-    max-width: 650px;
-    max-height: 650px;
-    height: 100%;
-    border-radius: 50%;
-  }
-  .textStroke {
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 3px;
-  }
-  @media (max-width: 1024px) {
-    .ellipse {
-      max-width: 450px;
-      max-height: 450px;
-    }
-  }
-  @media (max-width: 768px) {
-    .ellipse {
-      max-width: 400px;
-      max-height: 400px;
-    }
-  }
-  @media (max-width: 640px) {
-    .ellipse {
-      max-width: 270px;
-      max-height: 270px;
-    }
-  }
-  @media (max-width: 640px) {
-    .textStroke {
-      -webkit-text-stroke: 2px;
-    }
-  }
+}
+
+@theme {
+  --color-black1: rgb(5, 5, 5);
+  --color-black2: rgb(16, 16, 16);
+  --color-black3: rgb(25, 25, 25);
+  --color-black4: rgb(33, 33, 33);
+  --color-gray1: rgb(153, 153, 153);
+  --color-gray2: rgb(204, 204, 204);
+  --color-gray3: rgb(40, 40, 40);
+}
+
+#ref-hover #arrow {
+  opacity: 0;
+  transition: 500ms ease-in-out;
+}
+
+#ref-hover:hover #arrow {
+  opacity: 1;
+  rotate: -30deg;
 }
