@@ -24,7 +24,6 @@ const ParticleBackground = () => {
                 opacity: 0,
                 repeat: -1,
                 ease: 'none',
-                // yoyo: true,
             });
         });
     }, []);
@@ -37,7 +36,7 @@ const ParticleBackground = () => {
                     ref={(el) => {
                         particlesRef.current.push(el!);
                     }}
-                    className="absolute rounded-full bg-white"
+                    className="absolute rounded-full bg-primary"
                 />
             ))}
         </div>
