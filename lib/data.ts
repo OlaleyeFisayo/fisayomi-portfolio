@@ -32,12 +32,24 @@ export const MY_STACK = {
             icon: '/logo/react.png',
         },
         {
+            name: 'Vue',
+            icon: '/logo/vue.svg',
+        },
+        {
             name: 'Next.js',
             icon: '/logo/next.png',
         },
         {
+            name: 'Nuxt.js',
+            icon: '/logo/nuxt.svg',
+        },
+        {
             name: 'Redux',
             icon: '/logo/redux.png',
+        },
+        {
+            name: 'Pinia',
+            icon: '/logo/pinia.svg',
         },
         {
             name: 'Tailwind CSS',
@@ -48,26 +60,14 @@ export const MY_STACK = {
             icon: '/logo/gsap.png',
         },
         {
-            name: 'Framer Motion',
-            icon: '/logo/framer-motion.png',
-        },
-        {
             name: 'Sass',
             icon: '/logo/sass.png',
-        },
-        {
-            name: 'Bootstrap',
-            icon: '/logo/bootstrap.svg',
         },
     ],
     backend: [
         {
             name: 'Node.js',
             icon: '/logo/node.png',
-        },
-        {
-            name: 'NestJS',
-            icon: '/logo/nest.svg',
         },
         {
             name: 'Express.js',
@@ -80,16 +80,16 @@ export const MY_STACK = {
             icon: '/logo/mysql.svg',
         },
         {
-            name: 'PostgreSQL',
-            icon: '/logo/postgreSQL.png',
-        },
-        {
             name: 'MongoDB',
             icon: '/logo/mongodb.svg',
         },
         {
-            name: 'Prisma',
-            icon: '/logo/prisma.png',
+            name: 'SQLite',
+            icon: '/logo/sqlite.svg',
+        },
+        {
+            name: 'Drizzle ORM',
+            icon: '/logo/drizzle.png',
         },
     ],
     tools: [
@@ -98,12 +98,16 @@ export const MY_STACK = {
             icon: '/logo/git.png',
         },
         {
-            name: 'Docker',
-            icon: '/logo/docker.svg',
+            name: 'Figma',
+            icon: '/logo/figma.svg',
         },
         {
-            name: 'AWS',
-            icon: '/logo/aws.png',
+            name: 'Cloudinary',
+            icon: '/logo/cloudinary.svg',
+        },
+        {
+            name: 'OpenAI',
+            icon: '/logo/openai.svg',
         },
     ],
 };
