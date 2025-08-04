@@ -142,12 +142,13 @@ export const PROJECTS: IProject[] = [
         <li>📱 Ensured responsiveness and cross-device compatibility</li>
       </ul>
     `,
-    techStack: ['Vue.js', 'Tawk.to', "SCSS"],
-    thumbnail: '/projects/thumbnail/ikenne-mfb.jpg',
-    longThumbnail: '/projects/long/ikenne-mfb.jpg',
+    techStack: ['Vue.js', 'Tawk.to', "Sass"],
+    thumbnail: '/projects/thumbnail/ikenne-mfb.webp',
+    longThumbnail: '/projects/long/ikenne-mfb.webp',
     images: [
-      '/projects/images/ikenne-mfb-1.jpg',
-      '/projects/images/ikenne-mfb-2.jpg',
+      '/projects/images/ikenne-mfb-1.webp',
+      '/projects/images/ikenne-mfb-2.webp',
+      '/projects/images/ikenne-mfb-3.webp',
     ],
   },
   {
@@ -194,11 +195,12 @@ export const PROJECTS: IProject[] = [
       'Cloudinary',
       'BetterAuth',
     ],
-    thumbnail: '/projects/thumbnail/ventiii.jpg',
-    longThumbnail: '/projects/long/ventiii.jpg',
+    thumbnail: '/projects/thumbnail/ventiii.webp',
+    longThumbnail: '/projects/thumbnail/ventiii.webp',
     images: [
-      '/projects/images/ventiii-1.jpg',
-      '/projects/images/ventiii-2.jpg',
+      '/projects/images/ventiii-1.webp',
+      '/projects/images/ventiii-2.webp',
+      '/projects/images/ventiii-3.webp',
     ],
   },
 ];
