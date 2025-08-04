@@ -50,8 +50,7 @@ const Banner = () => {
                         <span className="font-medium text-foreground">
                             Fisayomi
                         </span>
-                        . A creative Frontend Developer with 3+ years of
-                        experience in building high-performance, scalable, and
+                        . A creative Frontend Developer with {GENERAL_INFO.yearsOfExperience} experience in building high-performance, scalable, and
                         responsive web solutions.
                     </p>
                     <Button
@@ -69,7 +68,7 @@ const Banner = () => {
                 <div className="md:absolute bottom-[10%] right-[4%] flex md:flex-col gap-4 md:gap-8 text-center md:text-right">
                     <div className="slide-up-and-fade">
                         <h5 className="text-3xl sm:text-4xl font-anton text-primary mb-1.5">
-                            3+
+                            {GENERAL_INFO.yearsOfExperience}
                         </h5>
                         <p className="text-muted-foreground">
                             Years of Experience
@@ -77,18 +76,18 @@ const Banner = () => {
                     </div>
                     <div className="slide-up-and-fade">
                         <h5 className="text-3xl sm:text-4xl font-anton text-primary mb-1.5">
-                            7+
+                            {GENERAL_INFO.completedProjects}
                         </h5>
                         <p className="text-muted-foreground">
                             Completed Projects
                         </p>
                     </div>
-                    <div className="slide-up-and-fade">
-                        <h5 className="text-3xl sm:text-4xl font-anton text-primary mb-1.5">
-                            10K+
-                        </h5>
-                        <p className="text-muted-foreground">Hours Worked</p>
-                    </div>
+                    {/* <div className="slide-up-and-fade"> */}
+                    {/*     <h5 className="text-3xl sm:text-4xl font-anton text-primary mb-1.5"> */}
+                    {/*         10K+ */}
+                    {/*     </h5> */}
+                    {/*     <p className="text-muted-foreground">Hours Worked</p> */}
+                    {/* </div> */}
                 </div>
             </div>
         </section>

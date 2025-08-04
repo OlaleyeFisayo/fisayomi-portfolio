@@ -7,6 +7,9 @@ export const GENERAL_INFO = {
     emailBody: 'Hi Fisayomi, I am reaching out to you because...',
 
     upworkProfile: 'https://www.upwork.com/freelancers/~019a3094aa4c0b97e3?mp_source=share',
+
+    yearsOfExperience: "2+",
+    completedProjects: "3+",
 };
 
 export const SOCIAL_LINKS = [
