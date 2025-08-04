@@ -6,6 +6,7 @@ export const GENERAL_INFO = {
     emailSubject: "Let's collaborate on a project",
     emailBody: 'Hi Fisayomi, I am reaching out to you because...',
 
+    resume: "/resume/resume.pdf",
     upworkProfile: 'https://www.upwork.com/freelancers/~019a3094aa4c0b97e3?mp_source=share',
 
     yearsOfExperience: "2+",
