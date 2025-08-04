@@ -53,7 +53,7 @@ const Banner = () => {
                         . A creative Software Engineer with {GENERAL_INFO.yearsOfExperience} experience in building high-performance, scalable, and
                         responsive web solutions.
                     </p>
-                    <div className='flex gap-2 flex-wrap'>
+                    <div className='flex gap-1.5 flex-wrap'>
                         <Button
                             as="link"
                             target="_blank"
