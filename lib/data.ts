@@ -298,6 +298,6 @@ export const MY_EXPERIENCE = [
     {
         title: 'Open-Source Contribution',
         company: 'AstroNvim',
-        duration: 'Jul 2024',
+        duration: 'Jul 2025',
     },
 ];
