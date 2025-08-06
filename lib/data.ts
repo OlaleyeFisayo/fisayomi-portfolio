@@ -207,13 +207,13 @@ export const PROJECTS: IProject[] = [
 
 export const MY_EXPERIENCE = [
     {
-        title: 'Junior Application Developer (Intern)',
-        company: 'Phlex Payment Limited',
-        duration: 'Jan 2024 - Jun 2024',
-    },
-    {
         title: 'Open-Source Contribution',
         company: 'AstroNvim',
         duration: 'Jul 2025',
+    },
+    {
+        title: 'Junior Application Developer (Intern)',
+        company: 'Phlex Payment Limited',
+        duration: 'Jan 2024 - Jun 2024',
     },
 ];
