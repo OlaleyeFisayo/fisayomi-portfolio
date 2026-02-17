@@ -15,7 +15,7 @@ export const GENERAL_INFO = {
 
 export const SOCIAL_LINKS = [
     { name: 'github', url: 'https://github.com/OlaleyeFisayo' },
-    { name: 'linkedin', url: 'https://www.linkedin.com/in/oluwafisayomi-festus-olaleye-67a778227/' },
+    { name: 'linkedin', url: 'https://www.linkedin.com/in/olaleyefisayo/' },
 ];
 
 export const MY_STACK = {
@@ -114,12 +114,12 @@ export const MY_STACK = {
 };
 
 export const PROJECTS: IProject[] = [
-  {
-    title: 'IKENNE Microfinance Bank Landing Page',
-    slug: 'ikenne-mfb',
-    liveUrl: 'https://ikennemfb.com/',
-    year: 2025,
-    description: `
+    {
+        title: 'IKENNE Microfinance Bank Landing Page',
+        slug: 'ikenne-mfb',
+        liveUrl: 'https://ikennemfb.com/',
+        year: 2025,
+        description: `
       A modern and responsive landing page built for Ikenne Microfinance Bank to serve as their primary digital touchpoint. It provides streamlined access to customer forms, banking services, and real-time support. <br/><br/>
       Key Features:<br/>
       <ul>
@@ -133,7 +133,7 @@ export const PROJECTS: IProject[] = [
         <li>Integrated Tawk.to via embedded scripts for live chat capabilities</li>
       </ul>
     `,
-    role: `
+        role: `
       Frontend Developer<br/>
       Owned the frontend development of the project:
       <ul>
@@ -142,21 +142,21 @@ export const PROJECTS: IProject[] = [
         <li>📱 Ensured responsiveness and cross-device compatibility</li>
       </ul>
     `,
-    techStack: ['Vue.js', 'Tawk.to', "Sass"],
-    thumbnail: '/projects/thumbnail/ikenne-mfb.webp',
-    longThumbnail: '/projects/long/ikenne-mfb.webp',
-    images: [
-      '/projects/images/ikenne-mfb-1.webp',
-      '/projects/images/ikenne-mfb-2.webp',
-      '/projects/images/ikenne-mfb-3.webp',
-    ],
-  },
-  {
-    title: 'Ventiii (Event Management System)',
-    slug: 'ventiii',
-    liveUrl: 'https://ventiii.vercel.app/',
-    year: 2025,
-    description: `
+        techStack: ['Vue.js', 'Tawk.to', "Sass"],
+        thumbnail: '/projects/thumbnail/ikenne-mfb.webp',
+        longThumbnail: '/projects/long/ikenne-mfb.webp',
+        images: [
+            '/projects/images/ikenne-mfb-1.webp',
+            '/projects/images/ikenne-mfb-2.webp',
+            '/projects/images/ikenne-mfb-3.webp',
+        ],
+    },
+    {
+        title: 'Ventiii (Event Management System)',
+        slug: 'ventiii',
+        liveUrl: 'https://ventiii.vercel.app/',
+        year: 2025,
+        description: `
       Ventiii is a comprehensive event management platform designed to help users create, promote, and manage events effortlessly. Currently in development, it features dynamic event creation, speaker association, user authentication, and image management. <br/><br/>
 
       Key Features:<br/>
@@ -175,7 +175,7 @@ export const PROJECTS: IProject[] = [
         <li>Set up form validation, error handling, and live updates for smooth UX</li>
       </ul>
     `,
-    role: `
+        role: `
       Full-Stack Developer<br/>
       Leading the entire development process:
       <ul>
@@ -186,35 +186,35 @@ export const PROJECTS: IProject[] = [
         <li>🧱 Structured and queried the database using Drizzle ORM + SQLite</li>
       </ul>
     `,
-    techStack: [
-      'Vue.js',
-      'Nuxt.js',
-      'Tailwind CSS',
-      'Drizzle ORM',
-      'SQLite',
-      'Cloudinary',
-      'BetterAuth',
-    ],
-    thumbnail: '/projects/thumbnail/ventiii.webp',
-    longThumbnail: '/projects/thumbnail/ventiii.webp',
-    images: [
-      '/projects/images/ventiii-1.webp',
-      '/projects/images/ventiii-2.webp',
-      '/projects/images/ventiii-3.webp',
-    ],
-  },
+        techStack: [
+            'Vue.js',
+            'Nuxt.js',
+            'Tailwind CSS',
+            'Drizzle ORM',
+            'SQLite',
+            'Cloudinary',
+            'BetterAuth',
+        ],
+        thumbnail: '/projects/thumbnail/ventiii.webp',
+        longThumbnail: '/projects/thumbnail/ventiii.webp',
+        images: [
+            '/projects/images/ventiii-1.webp',
+            '/projects/images/ventiii-2.webp',
+            '/projects/images/ventiii-3.webp',
+        ],
+    },
 ];
 
 export const MY_EXPERIENCE = [
     {
-        title: 'Frontend Developer Intern',
+        title: 'Frontend Developer',
         company: 'Fonu',
         duration: 'Aug 2025 - Present',
     },
     {
         title: 'Open-Source Contribution',
         company: 'AstroNvim',
-        duration: 'Jul 2025',
+        duration: 'Jul 2025 - Present',
     },
     {
         title: 'Junior Application Developer (Intern)',
