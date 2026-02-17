@@ -212,7 +212,7 @@ export const MY_EXPERIENCE = [
         duration: 'Aug 2025 - Present',
     },
     {
-        title: 'Open-Source Contribution',
+        title: 'Open-Source Contributor',
         company: 'AstroNvim',
         duration: 'Jul 2025 - Present',
     },
