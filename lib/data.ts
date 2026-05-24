@@ -7,7 +7,6 @@ export const GENERAL_INFO = {
     emailBody: 'Hi Fisayomi, I am reaching out to you because...',
 
     resume: "/resume/resume.pdf",
-    upworkProfile: 'https://www.upwork.com/freelancers/~019a3094aa4c0b97e3?mp_source=share',
 
     yearsOfExperience: "2+",
     completedProjects: "3+",
@@ -207,14 +206,19 @@ export const PROJECTS: IProject[] = [
 
 export const MY_EXPERIENCE = [
     {
+        title: 'Founder',
+        company: 'Brickly',
+        duration: 'Mar 2025 - Present',
+    },
+    {
         title: 'Frontend Developer',
-        company: 'Fonu',
+        company: 'Telconix',
         duration: 'Aug 2025 - Present',
     },
     {
         title: 'Open-Source Contributor',
         company: 'AstroNvim',
-        duration: 'Jul 2025 - Present',
+        duration: 'Jul 2025',
     },
     {
         title: 'Junior Application Developer (Intern)',
