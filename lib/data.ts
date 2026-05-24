@@ -208,7 +208,7 @@ export const MY_EXPERIENCE = [
     {
         title: 'Founder',
         company: 'Brickly',
-        duration: 'Mar 2025 - Present',
+        duration: 'Mar 2026 - Present',
     },
     {
         title: 'Frontend Developer',
