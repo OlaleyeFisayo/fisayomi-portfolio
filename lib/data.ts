@@ -222,7 +222,7 @@ export const MY_EXPERIENCE = [
     },
     {
         title: 'Junior Application Developer (Intern)',
-        company: 'Phlex Payment Limited',
+        company: 'Phlex Payment',
         duration: 'Jan 2024 - Jun 2024',
     },
 ];
